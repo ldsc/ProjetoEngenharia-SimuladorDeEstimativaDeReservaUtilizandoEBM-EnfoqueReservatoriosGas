@@ -1,0 +1,978 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Implementação
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Implementação"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se neste capítulo os códigos fontes em C++.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Implementação} 
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Código fonte
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Codigo-fonte"
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Implementação
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CRes
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{res-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\family typewriter
+CRes
+\family default
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CRes}, label={res-h},ex
+tendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CRes.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CRegLin
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{reglin-h}
+\end_layout
+
+\end_inset
+
+o arquivo com código da classe 
+\family typewriter
+CRegLin
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CRegLin}, label={reglin
+-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CRegLin.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{reglin-cpp}
+\end_layout
+
+\end_inset
+
+o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+RegLin.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CRegLin}, label={re
+glin-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CRegLin.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CResGas
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo com código da classe 
+\family typewriter
+C
+\family default
+ResGas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CResGas}, label={helo-h
+},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGas.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+ResGas.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CResGas}, label={he
+lo-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGas.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CResGasSecoPres
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo com código da classe 
+\family typewriter
+C
+\family default
+ResGasSecoPres.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CResGasSecoPres},
+ label={helo-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGasSecoPres.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+ResGasSecoPres.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CResGasSecoPres},
+ label={helo-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGasSecoPres.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CResGasSecoInf
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo com código da classe 
+\family typewriter
+C
+\family default
+ResGasSecoInf.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CResGasSecoInf},
+ label={helo-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGasSecoInf.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+ResGasSecoInf.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CResGasSecoInf},
+ label={helo-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGasSecoInf.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CResGasSecoInfPotAquifer
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo com código da classe 
+\family typewriter
+C
+\family default
+ResGasSecoInfPotAquifer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CResGasSecoInfPotAquife
+r}, label={helo-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGasSecoInfPotAquifer.h}
+\end_layout
+
+\end_inset
+
+Apresenta-se na listagem o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+ResGasSecoInfPotAquifer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CResGasSecoInfPotAq
+uifer}, label={helo-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGasSecoInfPotAquifer.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CResGasSecoInfSchilthuis
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo com código da classe 
+\family typewriter
+C
+\family default
+ResGasSecoSchilthuis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CResGasSecoInfSchilthui
+s}, label={helo-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGasSecoInfSchilthuis.h}
+\end_layout
+
+\end_inset
+
+Apresenta-se na listagem o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+ResGasSecoInfSchilthuis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CResGasSecoInfSchil
+thuis}, label={helo-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGasSecoInfSchilthuis.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CResGasCondNaoRetro
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo com código da classe 
+\family typewriter
+C
+\family default
+ResGasCondNaoRetro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CResGasCondNaoRetro},
+ label={helo-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGasCondNaoRetro.h}
+\end_layout
+
+\end_inset
+
+Apresenta-se na listagem o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+ResGasCondNaoRetro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CResGasCondNaoRetro
+}, label={helo-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGasCondNaoRetro.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CResGasCondRetro
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo com código da classe 
+\family typewriter
+C
+\family default
+ResGasCondRetro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CResGasCondRetro},
+ label={helo-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGasCondRetro.h}
+\end_layout
+
+\end_inset
+
+Apresenta-se na listagem o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+ResGasSecoCondRetro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CResGasCondRetro},
+ label={helo-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResGasCondRetro.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CResOil
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo com código da classe 
+\family typewriter
+C
+\family default
+ResOil.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CResOil}, label={helo-h
+},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResOil.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+ResOil.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CResOil}, label={he
+lo-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResOil.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CResOilCapa
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo com código da classe 
+\family typewriter
+C
+\family default
+ResOilCapa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CResOilCapa}, label={he
+lo-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResOilCapa.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+ResOilCapa.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CResOilCapa},
+ label={helo-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResOilCapa.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CResOilInf
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo com código da classe 
+\family typewriter
+C
+\family default
+ResOilInf.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CResOilInf}, label={hel
+o-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResOilInf.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+ResOilInf.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CResOilInf},
+ label={helo-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CResOilInf.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Main
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={
+\end_layout
+
+\begin_layout Plain Layout
+
+Arquivo de implementação da função 
+\backslash
+texttt{main()}}, label={List-5-3-programa.cpp},extendedchars=true,breaklines=true
+,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/main.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1075 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+AOO
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+AOO
+\end_layout
+
+\end_inset
+
+ -- Análise Orientada a Objeto
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Análise orientada a objeto
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:AOO"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagramas de classes
+\end_layout
+
+\begin_layout Standard
+O diagrama de classes é apresentado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-classes"
+
+\end_inset
+
+.
+ Uma descrição das classes, seus atributos e métodos é apresentada a seguir.
+\end_layout
+
+\begin_layout Subsection
+Dicionário de classes
+\end_layout
+
+\begin_layout Itemize
+Classe CRegLin: representa a classe que fará a regressão linear dos pontos
+ gerados pelas classe hedeiras da classe CRes.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+atributo a: coeficiente linear que vai caracterizar uma grandeza física
+ de um dos mecanismos de produção.
+\end_layout
+
+\begin_layout Itemize
+atributo b: coeficiente angular que vai caracterizar uma grandeza física
+ de um dos mecanismos de produção.
+\end_layout
+
+\begin_layout Itemize
+atributo sx: representa o somatório das variáveis x.
+ 
+\end_layout
+
+\begin_layout Itemize
+atributo sy: representa o somatório das variáveis y.
+\end_layout
+
+\begin_layout Itemize
+atributo sxx: representa o somatório do quadrado das variáveis x.
+\end_layout
+
+\begin_layout Itemize
+atributo syy: representa o somatório do quadrado das variáveis y.
+\end_layout
+
+\begin_layout Itemize
+método Reg: representa os calculos da regressão.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Diagramas/Diagrama_de_Classes.jpeg
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de classes
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-classes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Classe CRes: representa os conceitos básicos da engenharia de reservatório.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+atributo x: representa a variável das abscissas para cada mecanismo de
+\begin_inset Newline newline
+\end_inset
+
+produção.
+\end_layout
+
+\begin_layout Itemize
+atributo y: representa a variável das ordenadas para cada mecanismo de 
+\begin_inset Newline newline
+\end_inset
+
+produção.
+\end_layout
+
+\begin_layout Itemize
+atributo n: determina o número de variáveis dos atributos x e y.
+\end_layout
+
+\begin_layout Itemize
+atributo p [kgf/cm²]: representa a pressão no reservatório para cada histórico
+ de produção.
+\end_layout
+
+\begin_layout Itemize
+método Calc:
+\end_layout
+
+\begin_layout Itemize
+método CRes: representa o construtor da classe.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CResGas: representa os conceitos fundamentais dos mecanismos de produção
+ de gás.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+atributo gp [m³ std]: este armazena o volume de gás produzido.
+\end_layout
+
+\begin_layout Itemize
+atributo z [adimensional]: representa o fator de compressiblidade do gás.
+ 
+\end_layout
+
+\begin_layout Itemize
+método Calc: calcula as variáveis x e y da classe CRes.
+\end_layout
+
+\begin_layout Itemize
+método CResGas: representa o construtor da classe.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CResOil: representa os conceitos fundamentais dos mecanismos de produção
+ de óleo.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+atributo np [m³ std]: representa o volume de óleo produzido para cada histórico
+ de produção.
+\end_layout
+
+\begin_layout Itemize
+atributo bo [m³/m³ std]: representa o fator volume de formação do óleo para
+ cada histórico de produção.
+\end_layout
+
+\begin_layout Itemize
+atributo boi [m³/m³ std]: representa o fator volume de formação inicial
+ do óleo para o primeiro histórico de produção.
+\end_layout
+
+\begin_layout Itemize
+atributo pi [kgf/cm²]: representa a pressão inicial no primeiro histórico
+ de produção.
+\end_layout
+
+\begin_layout Itemize
+atributo cf [(kgf/cm²)^-1]: representa a compressibilidade da rocha reservatório.
+\end_layout
+
+\begin_layout Itemize
+atributo cw [(kgf/cm²)^-1]: representa a compressibilidade do fluido do
+ reservatório.
+\end_layout
+
+\begin_layout Itemize
+atributo swi: respresenta a saturação de água inicial do reservatório.
+\end_layout
+
+\begin_layout Itemize
+método Calc: calcula as variáveis x e y da classe CRes.
+\end_layout
+
+\begin_layout Itemize
+método CResOil: representa o construtor da classe.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CResGasSecoPres: representa os conceitos fundamentais do mecanismo
+ de produção de gás anormalmente pressurizado.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+atributo cw [(kgf/cm²)^-1]: representa a compressibilidade da água.
+\end_layout
+
+\begin_layout Itemize
+atributo cf [(kgf/cm²)^-1]: representa compressibilidade da formação.
+\end_layout
+
+\begin_layout Itemize
+atributo swi: representa a saturação de água inicial para cada historico
+ de produção.
+\end_layout
+
+\begin_layout Itemize
+método CResGasPres: representa o construtor da classe.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Classe CResGasSecoInf: representa os conceitos fundamentais do mecanismo
+ de gás com influxo de água.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+atributo we [m³]: respresenta o influxo acumulado do aquífero.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo bg [m³/m³ std]: representa o fator volume de formação para cada
+ histórico de produção.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo bgi [m³/m³ std]: representa o fator volume de formação inicial
+ para cada histórico de produção.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+método CResGasSecoInf: representa o construtor da classe.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Classe CResGasSecoInfPotAquifer: representa os conceitos do mecanismo de
+ gás com influxo de água, utilizando o método Pot Aquifer.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+atributo we [m³]: respresenta o influxo acumulado do aquífero.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo bg [m³/m³ std]: representa o fator volume de formação para cada
+ histórico de produção.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo bgi [m³/m³ std]: representa o fator volume de formação inicial
+ para cada histórico de produção.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo deltap [kgf/cm²]: representa o diferencial de pressão.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo re [m]: representa o raio do aquífero.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo ro [m]: representa o raio do reservatórioatributo we: respresenta
+ o influxo acumulado do aquífero.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo fi: representa a porosidade do aquífero.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo h [m]: representa a espessura do aquífero.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo cw 
+\series default
+[(kgf/cm²)^-1]
+\series bold
+: representa a compressibilidade da água.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo cf 
+\series default
+[(kgf/cm²)^-1]
+\series bold
+: representa a compressibilidade da formação.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+método CResGasSecoInfPotAquifer: representa o construtor da classe.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Classe CResGasSecoInfSchilthuis: representa os conceitos do mecanismo de
+ gás com influxo de água, utilizando o método de Schilthuis.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+atributo we [m³]: respresenta o influxo acumulado do aquífero.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo bg [m³/m³ std]: representa o fator volume de formação para cada
+ histórico de produção.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo bgi [m³/m³ std]: representa o fator volume de formação inicial
+ para cada histórico de produção.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo deltap [kgf/cm²]: representa o diferencial de pressão.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo j [m³/(d*kgf/cm²)]: representa a constante de influxo.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributos t1 e t2 [d]: representam os limites fixos de integração.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+método CResGasSecoInfSchilthuis: representa o construtor da classe.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Classe CResGasCondNaoRetro: representa os conceitos do mecanismo de gás
+ condensado não-retrógrado.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+atributo gpp [m³ std]: representa o volume de gás produzido parcial.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo gec [m³ std]: representa o volume de gás condensado equivalente.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo gew [m³ std]: representa o volume de vapor d'água equivalente.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo gpt [m³ std]: representa o volume total de gás produzido.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo vw [m³]: representa o volume de água produzida.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo vc [m³]: representa o volume de gás condensado produzido.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo dc: representa a densidade do gás.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo mc: representa a massa de condensado.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo bgi [m³/m³ std]: representa o fator volume de formação inicial
+ para cada histórico de produção.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+método CResGasCondNaoRetro: representa o construtor da classe.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Classe CResGasCondRetro: representa os conceitos do mecanismo de gás condensado
+ retrógrado.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+atributo bgi [m³/m³ std]: representa o fator volume de formação inicial
+ para cada histórico de produção.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo sl: representa a saturação de líquido no reservatório.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo n1: número de mols de líquido.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo n2: número de mols de líquido.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo temp [K]: temperatura do gás 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo dl: representa a densidade do líquido.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo ml: representa a massa do líquido.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo z2f: representa o fator de compressibilidade de duas fases.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+método CResGasCondRetro: representa o construtor da classe.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe COilCapa: representa os conceitos do reservatório que tem como mecanismo
+ de produção a expansão da capa de gás.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+atributo bg: representa o fator volume de formação do gás para cada histórico
+ de produção.
+\end_layout
+
+\begin_layout Itemize
+atributo bgi: representa o fator volume de formação inicial do gás para
+ o primeiro histórico de produção.
+\end_layout
+
+\begin_layout Itemize
+atributo rp: representa a razão gás/óleo acumulada em condições de temperatura
+ e pressão do reservatório.
+\end_layout
+
+\begin_layout Itemize
+atributo rs: representa razão de solubilidade do gás no óleo.
+\end_layout
+
+\begin_layout Itemize
+atributo rsi: representa razão de solubilidade inicial do gás no óleo.
+\end_layout
+
+\begin_layout Itemize
+método COilCapa: representa o construtor da classe.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe COilInf: representa os conceitos do reservatório que tem como mecanismo
+ de produção o influxo de água do aquífero para zona de óleo.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+atributo bg: representa o fator volume de formação do gás para cada histórico
+ de produção.
+\end_layout
+
+\begin_layout Itemize
+atributo bgi: representa o fator volume de formação inicial do gás para
+ o primeiro histórico de produção.
+\end_layout
+
+\begin_layout Itemize
+atributo rp: representa a razão gás/óleo acumulada em condições de temperatura
+ e pressão do reservatório.
+\end_layout
+
+\begin_layout Itemize
+atributo rs: representa razão de solubilidade do gás no óleo.
+\end_layout
+
+\begin_layout Itemize
+atributo rsi: representa razão de solubilidade inicial do gás no óleo.
+\end_layout
+
+\begin_layout Itemize
+atributo we: respresenta o influxo acumulado do aquífero.
+\end_layout
+
+\begin_layout Itemize
+atributo m: representa a razão volume de gás na capa de gás pelo volume
+ de óleo na zona de óleo.
+\end_layout
+
+\begin_layout Itemize
+método COilInf: representa o construtor da classe.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Diagrama de seqüência -- eventos
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Eventos
+\end_layout
+
+\end_inset
+
+ e mensagens
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Mensagens
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de sequência
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:diagrama de sequência"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\emph on
+O diagrama de seqüência enfatiza a troca de eventos e mensagens e sua ordem
+ temporal.
+ Contém informações sobre o fluxo de controle do programa.
+ Costuma ser montado a partir de um diagrama de caso de uso e estabelece
+ o relacionamento dos atores (usuários e sistemas externos) com alguns objetos
+ do sistema.
+\end_layout
+
+\begin_layout Subsection
+
+\shape italic
+\emph on
+Diagrama de sequência geral
+\end_layout
+
+\begin_layout Standard
+Veja o 
+\shape italic
+\emph on
+diagrama de seqüência na
+\shape default
+\emph default
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-sequencia"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Diagramas/Diagrama_de_Sequencia_Geral.jpg
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de seqüência
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-sequencia"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\shape italic
+\emph on
+Diagrama de sequência específico
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Diagramas/Diagrama_de_Sequencia_Especifico.jpeg
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de sequência específico - Reservatório
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de comunicação
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+comunicação
+\end_layout
+
+\end_inset
+
+ -- colaboração
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+colaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Diagrama-de-Comunicação"
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de colaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "par:Diagrama-de-colaboração:"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+No diagrama de comunicação o foco é a interação e a troca de mensagens e
+ dados entre os objetos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Diagramas/Diagrama_de_Comunicação.jpeg
+	scale 90
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de comunicação
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-comunicação"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de máquina de estado
+\end_layout
+
+\begin_layout Standard
+Um diagrama de máquina de estado representa os diversos estados que o objeto
+ assume e os eventos que ocorrem ao longo de sua vida ou mesmo ao longo
+ de um processo (histórico do objeto).
+ É usado para modelar aspectos dinâmicos do objeto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Diagramas/Diagrama_de_Maquina_de_Estado.jpeg
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Máquina de Estado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de atividades
+\end_layout
+
+\begin_layout Standard
+Veja na Figura o diagrama de atividades correspondente a uma atividade específic
+a do diagrama de máguina de estado.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Diagramas/Diagrama_de_Atividades2.jpeg
+	scale 65
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de atividades, detalhando um método para o cálculo do influxo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

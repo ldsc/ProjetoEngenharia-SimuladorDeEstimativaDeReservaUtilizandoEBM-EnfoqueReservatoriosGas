@@ -1,0 +1,1127 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\branch 1.1 Descrição do problema físico
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Elaboração
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Elaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Elaboração"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capitulo faremos a análise de dominio, identificação de pacotes e
+ diagrama de pacotes.
+\end_layout
+
+\begin_layout Section
+Referências Bibliográficas
+\end_layout
+
+\begin_layout Itemize
+ROSA, ADALBERTO J.; CARVALHO, RENATO S.; XAVIER, JOSÉ AUGUSTO D.
+ Engenharia de Reservatório de Petróleo.
+ Rio de Janeiro: Editora Interciência, 2006.
+\end_layout
+
+\begin_layout Itemize
+AHMED, TAREK.
+ Reservoir Engeneering Handbook.
+ Second Edition.
+ Texas: Gulf Professional Publishing, 2001.
+\end_layout
+
+\begin_layout Itemize
+DAKE, L.
+ P.
+ Fundamentals of reservoir engineering.
+ Rio de Janeiro: Elsevier, 1978.
+\end_layout
+
+\begin_layout Section
+Descrição do problema físico
+\end_layout
+
+\begin_layout Standard
+O software calcula as reservas dos reservatórios de óleo e gás, utilizando
+ diferentes métodos de acordo com o tipo de mecanismo de produção.
+ Para isto será utilizada a equação de balanço de materiais, que se baseia
+ no balanço de massas dos fluidos existentes no interior dos poros da rocha-rese
+rvatório.
+\end_layout
+
+\begin_layout Standard
+A massa de fluidos existente no reservatório em um determinado instante
+ é a diferença entre a massa original e a massa produzida.
+ Como os volumes dos fluidos produzidos são geralmente medidos em uma determinad
+a condição-padrão de pressão e de temperatura, a equação de balanço de materiais
+ é comumente escrita de tal maneira que, em um instante qualquer, o volume
+ de fluidos existente no reservatório seja a diferença entre o volume inicialmen
+te existente e o produzido, ambos medidos em condição-padrão.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Para reservatórios de gás o programa utiliza a equação de balanço de materiais:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{p}{Z}=\frac{1}{V_{i}-W_{e}}\left(\frac{p_{i}V_{i}}{Z_{i}}-\frac{Tp_{0}}{T_{0}}G_{p}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p$
+\end_inset
+
+ [kgf/cm²] = pressão
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Z$
+\end_inset
+
+ [adimensional] = coeficiente ou fator de compressibilidade
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $V$
+\end_inset
+
+ [m³] = volume ocupado de gás
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $W_{e}$
+\end_inset
+
+ [m³] = influxo de água acumulado
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $G_{p}$
+\end_inset
+
+ [m³ std]= gás produzido
+\end_layout
+
+\begin_layout Itemize
+Índice 
+\begin_inset Formula $i$
+\end_inset
+
+ = condições iniciais no reservatório
+\end_layout
+
+\begin_layout Itemize
+Índice 
+\begin_inset Formula $0$
+\end_inset
+
+ = condições padrão
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+A equação de balanço de materiais utilizada para reservatório de óleo pode
+ ser escrita como:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+N=\frac{N_{p}\left[B_{o}+\left(R_{p}-R_{s}\right)B_{g}\right]-W_{e}}{B_{o}-B_{oi}+(R_{si}-R_{s})B_{g}+mB_{oi}\left(\frac{B_{g}}{B_{gi}}-1\right)+\left(1+m\right)B_{oi}\left(\frac{c_{w}S_{wi}+c_{f}}{1-S_{wi}}\right)\triangle p}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $N$
+\end_inset
+
+ [m³std] = volume original de óleo
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $N_{p}$
+\end_inset
+
+ [m³ std] = volume de óleo produzido
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B_{o}$
+\end_inset
+
+ [m³/m³ std] = fator volume-formação do óleo
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R_{p}$
+\end_inset
+
+ [m³ std/m³ std] = razão gás/óleo acumulada
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R_{s}$
+\end_inset
+
+ [m³/m³ std] = razão de solubilidade
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B_{g}$
+\end_inset
+
+ [m³/m³ std] = fator volume-formação do gás
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $W_{e}$
+\end_inset
+
+ [m³] = influxo de água acumulado
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $m$
+\end_inset
+
+ [adimensional] = razão entre o volume original de gás e o volume original
+ de óleo em condições de reservatório
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c_{w}$
+\end_inset
+
+ [(kgf/cm²)^-1] = compressibilidade da água
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{wi}$
+\end_inset
+
+ [adimensional] = saturação de água conata
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c_{f}$
+\end_inset
+
+ [(kgf/cm²)^-1] = compressibilidade da formação ou de poros
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\triangle p=p_{i}-p$
+\end_inset
+
+ [kgf/cm²] = variação de pressão
+\end_layout
+
+\begin_layout Itemize
+Índice 
+\begin_inset Formula $i$
+\end_inset
+
+ = condições iniciais no reservatório
+\end_layout
+
+\begin_layout Standard
+Podemos simplificar esta equação, para facilitar a regressão linear posteriormen
+te:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+F=N(E_{o}+mE_{g}+E_{f,w})+W_{e},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+onde:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+F=N_{p}[B_{o}+(R_{p}-R_{s})B_{g}],
+\end{equation}
+
+\end_inset
+
+representa o volume de fluidos produzidos; 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+E_{o}=B_{o}+(R_{si}-R_{s})B_{g}-B_{oi},
+\end{equation}
+
+\end_inset
+
+representa a expansão dos fluidos da zona de óleo;
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+E_{g}=B_{oi}\frac{(B_{g}-B_{gi})}{B_{gi}},
+\end{equation}
+
+\end_inset
+
+representa a expansão do gás da capa de gás;
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+E_{f,w}=(1+m)B_{oi}((c_{w}S_{wi}+c_{f})/(1-S_{wi}))(p_{i}-p),
+\end{equation}
+
+\end_inset
+
+representa os efeitos da expansão da água conata e redução do volume poroso;
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+m=GB_{gi}/NB_{oi}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+A partir dessa equação geral o programa determina o volume de óleo original
+ do reservatório para cada tipo de mecanismo associado analisando suas caracterí
+sticas e considerações.
+\end_layout
+
+\begin_layout Section
+Descrição dos mecanismos de produção para reservatório de gás
+\end_layout
+
+\begin_layout Quotation
+
+\series bold
+Os mecanismos de produção para reservatórios de gás são:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Depleção: quando o reservatório é colocado para produzir, há um diferencial
+ de pressão entre o fundo do poço e o interior do reservatório, o que causa
+ o início da produção.
+ À medida que o gás vai sendo produzido, este se expande.
+ Quando o reservatório produz somente por depleção, é chamado de reservatório
+ volumétrico.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Influxo de água: quando há um aquífero contíguo ao reservatório de gás.
+ À medida que ocorre a retirada de gás através da produção, há um influxo
+ de água para o interior do reservatório, que empurra o gás ainda existente
+ no resevatório e dá continuidade à produção.
+\end_layout
+
+\begin_layout Quotation
+
+\series bold
+Os reservatórios de gás a serem considerados serão:
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+Reservatórios de gás seco
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Reservatórios de gás seco são aqueles em que o fluido se encontra no estado
+ gasoso tanto em condições de reservatório, quanto de superfície.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Para um reservtório volumétrico de gás seco, que produz somente por depleção,
+ ou seja, por expansão da massa de gás existente no meio poroso, não havendo,
+ portanto, influxo de água proveniente de aquífero, e desconsidera-se as
+ variações de volume poroso e água conata (por serem desprezíveis comparadas
+ à expansão do gás), a equação (3.1) reduz-se a:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+p/Z=p_{i}/Z_{i}-Tp_{0}G_{p}/(V_{i}T_{0}),
+\end{equation}
+
+\end_inset
+
+ou ainda:
+\begin_inset Formula 
+\begin{equation}
+p/Z=p_{i}/Z_{i}-p_{i}G_{p}/(Z_{i}G).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Para um reservatório de gás seco anormalmente pressurizado, que apresenta
+ grandes gradientes de pressão, a rocha é inconsolidada e altamente compressível
+, logo não podemos desprezar as variações do volume poroso e de água conata.
+ Também produz por depleção.
+ Portanto, a EBM fica:
+\begin_inset Formula 
+\begin{equation}
+\frac{p}{Z}\left[1-\frac{(c_{w}S_{wi}+c_{f})\Delta p}{1-S_{wi}}\right]=\frac{p_{i}}{Z_{i}}-\frac{p_{i}}{Z_{i}G}G_{p}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Definindo a compressibilidade efetiva do sistema água formação 
+\begin_inset Formula $(c_{ewf})$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+c_{ewf}=\frac{c_{w}S_{wi}+c_{f}}{1-S_{wi}},
+\end{equation}
+
+\end_inset
+
+simplificamos a equação (3.11) em:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+\frac{p}{Z}(1-c_{ewf}\Delta p)=\frac{p_{i}}{Z_{i}}-\frac{p_{i}}{Z_{i}G}G_{p}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Reservatórios de gás seco sob influxo de água, que são aqueles em que à
+ medida em que ocorre a retirada de massa através da produção dos poços,
+ há influxo de água para o seu interior proveniente de um aquífero contíguo
+ à zona de gás (este mecanismo também ocorre nos reservatórios de óleo).
+ Para reservatórios de gás sob influxo de água considera-se que: 
+\begin_inset Formula 
+\begin{equation}
+V=V_{i}-W_{e}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Para determinação do influxo de água são utilizados dois modelos.
+ No programa o usuário irá definir o modelo usado: Pot Aquifer ou Schilthuis.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Modelo Pot Aquifer
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Para aquíferos de tamanho próximo ao do reservatório.
+ Em reservatórios com mecanismo de influxo de água, a queda de pressão devida
+ à produção de fluidos causa uma expansão da água do aquífero contíguo à
+ zona de óleo.
+ Essa expansão provoca um fluxo de água para o interior do reservatório
+ (Dake, 1978).
+ De acordo com a definição de compressibilidade, aplicada ao aquífero, pode-se
+ dizer que:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+W_{e}=(c_{w}+c_{f})W_{i}\triangle p,
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $W_{i}$
+\end_inset
+
+ [m³] é o volume inicial de água no aquífero, 
+\begin_inset Formula $∆p$
+\end_inset
+
+ [kg/cm²] é a queda de pressão no aquífero, e a compressibilidade total
+ do aquífero é a soma das compressibilidades da água 
+\begin_inset Formula $(c_{w})$
+\end_inset
+
+ e dos poros 
+\begin_inset Formula $(c_{f})$
+\end_inset
+
+, uma vez que o meio poroso se encontra 100% saturado com água.
+ Se o aquífero possui uma geometria radial, o influxo de água pode ser calculado
+ por (Dake, 1978):
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+W_{e}=(c_{w}+c_{f})\pi(r_{e}^{2}-r_{o}^{2})h\phi\Delta p,
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+onde 
+\begin_inset Formula $r_{e}$
+\end_inset
+
+ [m] é o raio do aquífero, 
+\begin_inset Formula $r{}_{o}$
+\end_inset
+
+ [m] é o raio do reservatório e 
+\begin_inset Formula $h$
+\end_inset
+
+ [m] a espessura da formação.
+ Nesse modelo, admite-se que a queda de pressão no aquífero em um determinado
+ instante seja igual à queda de pressão no contato reservatório-aquífero.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Modelo Schilthuis
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Se, por outro lado, o aquífero é bem maior que o reservatório, essas equações
+ se tornam inadequadas para descrever o influxo de água, porque a queda
+ de pressão no limite do reservatório (contato água-óleo) não se transmite
+ instantaneamente através do aquífero.
+ Para aquíferos maiores há um intervalo de tempo entre a queda de pressão
+ no reservatório e a resposta do aquífero.
+ Um dos modelos utilizados para o cálculo de influxo é o modelo de Schilthuis
+ (1936),
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+dW_{e}/dt=J(p_{i}-p),
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $J$
+\end_inset
+
+ [m³/(d*kgf/cm²)] é denominada constante de influxo de água, também conhecida
+ como índice de produtividade do aquífero, 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ [kgf/cm²] é a pressão inicial do sistema e 
+\begin_inset Formula $p$
+\end_inset
+
+ [kgf/cm²] é a pressão no contato óleo/água.
+ 
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+Reservatórios de gás condensado
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Reservatórios de gás condensado são aqueles que em condições de reservatório
+ o fluido se encontra no estado gasoso, mas na superfície produz uma certa
+ quantidade de líquido.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Reservatórios de gás condensado não-retrógrado, que são aqueles em que os
+ fluidos se encontram no estado gasoso dentro do reservatório, mas em condições
+ de superfície produzem volumes equivalentes de água e gás.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Para reservatórios de gás condensado não-retrógrado o programa faz alguns
+ cálculos e aplica-se a equação de balanço de materiais (3.9) acima citada.
+ A razão disso, é que para esse tipo de reservatório precisa-se achar um
+ novo valor para 
+\begin_inset Formula $Gp$
+\end_inset
+
+ [m³ std] e para isso considera que:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Precisa-se achar o volume de gás equivalente para cada 1 m³ de condensado
+ produzido:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+(GE)_{c}=23686d_{c}/M_{c},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+onde 
+\begin_inset Formula $(GE)_{c}$
+\end_inset
+
+[m³ std/m³ std] é o volume de gás equivalente a 1 m³ produzido, 
+\begin_inset Formula $d_{c}$
+\end_inset
+
+ [adimensional] é a densidade do condensado e 
+\begin_inset Formula $M_{c}$
+\end_inset
+
+ [adimensional] é a massa molecular do condensado.
+ Sendo que: 
+\begin_inset Formula 
+\begin{equation}
+M_{c}=44.29d_{c}/(1.03-d_{c}).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Precisa-se saber também o volume de vapor de água produzido para cada 1m³
+ de condensado produzido e esse valor será
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+(GE)_{w}=1316\text{ [m³std/m³std]}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Chegando-se então no seguinte valor para 
+\begin_inset Formula $(G_{p})_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+(G_{p})_{t}=G_{p}+(GE)_{ct}+(GE)_{wt},
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $(G_{p})_{t}$
+\end_inset
+
+ [m³ std] é o novo valor para 
+\begin_inset Formula $G_{p}$
+\end_inset
+
+ a ser usado na equação de balanço de materiais (3.9), 
+\begin_inset Formula $G_{p}$
+\end_inset
+
+ [m³ std] é o volume de gás produzido que continua no estado gasoso na superfíci
+e, 
+\begin_inset Formula $(GE)_{ct}$
+\end_inset
+
+ [m³ std] é o volume acumulado de condensado produzido e 
+\begin_inset Formula $(GE)_{wt}$
+\end_inset
+
+ é o volume acumulado de água produzida.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Reservatórios de gás condensado retrógrado, que são aqueles em que há formação
+ de líquido ainda dentro do reservatório, à medida que ocorre a depleção.
+ Emprega-se o fator de compressibilidade duas fases 
+\begin_inset Formula $Z_{2f}$
+\end_inset
+
+ [adimensional] no lugar do fator de compressibilidade 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ O valor de 
+\begin_inset Formula $Z_{2f}$
+\end_inset
+
+ pode ser obtido por análises PVT ou por correlações empíricas.
+\end_layout
+
+\begin_layout Section
+Descrição dos mecanismos de produção para reservatório de óleo
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Os reservatórios de óleo a serem considerados são:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Reservatórios com gás em solução, cujo mecanismo de produção se baseia na
+ expansão do gás inicialmente dissolvido no óleo e que foi liberado devido
+ à redução de pressão, consequência da produção de fluidos.
+ Para este reservatório, considerando-se a compressibilidade desprezível
+ obtemos a equação de balanço de materiais:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+F=NE_{o};
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Reservatórios com capa de gás, cujo mecanismo de produção se baseia na expansão
+ da capa de gás devido à diminuição de pressão.
+ Para um reservatório com mecanismo de capa de gás, temos:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\begin{equation}
+F=N(E_{o}+mE_{g});
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Reservatórios com influxo de água, onde a queda de pressão devida à produção
+ de fluidos causa uma expansão da água do aquífero contíguo à zona de óleo.
+ Para um reservatório com mecanismo de influxo de água:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F=NE_{o}+W_{e}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Estas equações obtidas são apenas para a linearização da EBM, para facilitar
+ a regressão linear.
+ Seus termos já foram explicados no início deste capítulo.
+\end_layout
+
+\begin_layout Section
+Análise do domínio
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Análise de domínio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Área: Engenharia de Petróleo
+\end_layout
+
+\begin_layout Standard
+A área relacionada ao desenvolvimento do programa é a Engenharia de petróleo.
+ É a área da engenharia que trata de todos os ramos relacionados à produção
+ de hidrocarbonetos, que podem ser óleo ou gás natural.
+ As atividades são divididas geralmente em duas grandes áreas: upstream,
+ refere-se às atividades de exploração e produção e downstream, que refere-se
+ às atividades de refino e distribuição.
+\end_layout
+
+\begin_layout Itemize
+Sub-área: Engenharia de Reservatório
+\end_layout
+
+\begin_layout Standard
+A Engenharia de Reservatório constitui uma sub-área de extrema importância
+ na engenharia de petróleo,e está associdada a descrição do comportamento
+ do óleo, do gás e da água no interior dos meios porosos que compõem as
+ acumulações petrolíferas na sub-superfície, essencial para o desenvolvimento
+ de campos de petróleo.Os engenheiros, geólogos e geofísicos de petróleo,
+ assim como outros profissionais que atuam na área de engenharia de reservatório
+s,utilizam informações sobre as propriedades e características das rochas
+ e dos fluidos contido nas formações portadoras de petróleo, bem como seu
+ comportamento passado(no caso de parte do fluido já ter sido produzida),
+ para inferir o comportamento futuro desses reservatórios.
+\end_layout
+
+\begin_layout Itemize
+Área: Modelagem Numérica Computacional
+\end_layout
+
+\begin_layout Standard
+A Modelagem Numérica Computacional é a área que trata do desenvolvimento
+ de soluções para problemas científicos de Engenharia, analisando os fenômenos,
+ desenvolvendo modelos matemáticos para sua descrição, e elaborando algorítimos
+ e códigos computacionais para obtenção daquelas soluções.
+\end_layout
+
+\begin_layout Section
+Identificação de pacotes
+\end_layout
+
+\begin_layout Itemize
+Pacote Reservatório:
+\end_layout
+
+\begin_layout Standard
+Contém todos os conceitos associados à reservatório incluindo modelos de
+ equação do balanço de materiais, modelos para determinação do influxo de
+ água, e os tipos de mecanismos associados aos reservatórios como mecanismo
+ de influxo de água, capa de gás, gás em solução, etc.
+\end_layout
+
+\begin_layout Itemize
+Pacote Métodos Numéricos:
+\end_layout
+
+\begin_layout Standard
+Esse pacote inclui pacotes para realização de operações numéricas como o
+ pacote regressão linear, que será utilizado para determinação de funções
+ lineares a partir de dados de produção do reservatório para os diferentes
+ mecanismos de produção, e o pacote ntegral, que será utilizado nos modelos
+ de influxo de água.
+\end_layout
+
+\begin_layout Itemize
+Pacote Gráfico:
+\end_layout
+
+\begin_layout Standard
+Esse pacote é responsável por plotar os gráficos.
+\end_layout
+
+\begin_layout Section
+Diagrama de pacotes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Diagramas/Diagrama_de_pacotes.jpeg
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de pacotes
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
