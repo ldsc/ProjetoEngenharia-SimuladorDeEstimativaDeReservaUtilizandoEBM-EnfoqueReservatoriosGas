@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \begin_preamble
 \usepackage {graphicx}
@@ -15,16 +17,18 @@
 \language_package default
 \inputencoding iso8859-1
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -55,6 +59,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -69,7 +74,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
@@ -90,6 +98,10 @@ status collapsed
 Capa
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -207,6 +219,20 @@ THAÍSA DE CASTRO ALEIXO - 2014 - V2
 \end_layout
 
 \begin_layout Standard
+\align center
+
+\size large
+IGOR BENJAMIN DE SOUZA - 2023 - V3
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+MATHEUS RODRIGUES NASCMENTO - 2023 - V3
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace 4cm
 \end_inset
 
@@ -221,7 +247,7 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-ABRIL - 2015
+NOVEMBRO - 2023
 \end_layout
 
 \begin_layout Standard
@@ -314,7 +340,7 @@ A linguagem utilizada é uma linguagem orientada a objeto, que utiliza o
  como os de engenharia.
  É uma linguagem de alto nível, fortemente tipada.
  É amplamente utilizada para montagem de sistemas operacionais como Windows,
- GNU/Linux, e programas como o Office e OpenOffice.
+ GNU/Linux, e programas como o Lyx, Office e OpenOffice.
 \end_layout
 
 \end_inset
@@ -326,11 +352,18 @@ r as equações de balanço de materias vistas na disciplina de Engenharia
  de Reservatório para os diferentes mecanismo de produção de petróleo.
  Dessa forma, a principal finalidade do programa é fornecer uma estimativa
  do volume original de óleo ou gás do reservatório.
- 
+
 \series bold
-É dado um enfoque maior nos reservatórios de gás, incluindo, por exemplo,
- o seu comportamento quando há influxo de água, e alguns modelos para o
- cálculo deste influxo; além de reservatórios de gás condensado.
+ Além dos mecanismos de produção convencionais, o simulador também é capaz
+ de modelar a injeção de água e gás ou uma mistura de fluidos.
+
+\series default
+ Também é dado um enfoque em reservatórios de gás e gás condensado, incluindo,
+ por exemplo, o seu comportamento quando há influxo de água, e alguns modelos
+ para o cálculo deste influxo.
+
+\series bold
+ 
 \end_layout
 
 \begin_layout Section
@@ -380,6 +413,10 @@ Os objetivos da primeira versão do trabalho são:
 
 \begin_layout Itemize
 Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -391,6 +428,10 @@ rio.
 \end_deeper
 \begin_layout Itemize
 Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -415,9 +456,56 @@ name "sec:Objetivos-v2"
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Os objetivos deste trabalho são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desenvolver uma solução para determinar o volume original de fluido (principalme
+nte gás) no reservatório.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Selecionar o tipo de fluido presente no reservatório (gás).
+\end_layout
+
+\begin_layout Itemize
+Selecionar o mecanismo de produção.
+\end_layout
+
+\begin_layout Itemize
+Quando houver influxo de água, escolher o modelo que será utilizado para
+ o cálculo deste influxo.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Objetivos - V3
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos-v3"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -430,8 +518,9 @@ Objetivo geral:
 \begin_layout Itemize
 
 \series bold
-Desenvolver uma solução para determinar o volume original de fluido (principalme
-nte gás) no reservatório.
+Desenvolver uma solução para determinar o volume original de fluido no reservató
+rio, incluindo reservatórios com injeção de fluidos.
+ 
 \end_layout
 
 \end_deeper
@@ -439,39 +528,50 @@ nte gás) no reservatório.
 
 \series bold
 Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \series bold
-Selecionar o tipo de fluido presente no reservatório (gás).
+Selecionar o tipo de fluido presente no reservatório (gás, óleo, água, ou
+ misturas).
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Selecionar o mecanismo de produção.
+Selecionar o mecanismo de produção (gas lift, water flooding, CO2 injection).
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Quando houver influxo de água, escolher o modelo que será utilizado para
- o cálculo deste influxo.
+Selecionar o modelo de injeção de fluidos (água, gás, CO2, ou misturas).
+ 
 \end_layout
 
 \end_deeper
 \begin_layout Standard
-
-\series bold
-As EBM já foram implementadas no segundo semestre de 2012 pelos alunos Leonardo
+As EBM foram implementadas no segundo semestre de 2012 pelos alunos Leonardo
  Mesquita Caetano e Thiago Pessanha de Macedo.
- O que será feito no presente trabalho nada mais é do que a ampliação deste
- código, adicionando novas premissas para a determinação do volume original
- de gás: considerando-se reservatórios de gás condensado (retrógrado e não
- retrógrado), analisando-se a influência dos aquíferos e detalhando o comportame
-nto de alguns modelos de influxo.
+ No segundo semestre de 2014, Jalile Bartole Pereira e Thaísa de Castro
+ Aleixo fizeram a ampliação deste código, adicionando novas premissas para
+ a determinação do volume original de gás: considerando-se reservatórios
+ de gás condensado (retrógrado e não retrógrado), analisando-se a influência
+ dos aquíferos e detalhando o comportamento de alguns modelos de influxo.
+ 
+\series bold
+Nesta versão do projeto, o código foi estendido para inclur a modelagem
+ da injeção de fluidos ao reservatório, aumentando a gama de cenários de
+ simulação da produção para determinar o volume original de óleo e gás em
+ reservatórios que estão sendo submetidos a injeção de água e gás, CO2 e
+ água, CO2 e gás, água e gás, e água, CO2 e gás.
 \end_layout
 
 \end_body
