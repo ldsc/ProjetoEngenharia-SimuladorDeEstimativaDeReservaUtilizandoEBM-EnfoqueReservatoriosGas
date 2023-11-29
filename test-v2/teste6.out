@@ -1,0 +1,63 @@
+Tipo de Fluido:
+(1)Gas
+(2)Oleo
+1
+
+Tipo de mecanismo:
+(1)Volumetrico de Gas Seco
+(2)Anormalmente Pressurizado
+(3)Sob Influxo de Agua
+(4)Sob Influxo de agua Modelo Pot Aquifer
+(5)Sob Influxo de agua Modelo Schilthuis
+(6)Gas Condensado Nao Retrogrado
+(7)Gas Condensado Retrogrado
+6
+
+Numero de medicoes:3
+
+Pressao (1) (kgf/cm2):205.70
+
+Gas Produzido (1)(m3 std):2.237e6
+
+Z(1):0.8689
+
+Pressao (2) (kgf/cm2):177.57
+
+Gas Produzido (2)(m3 std):6.258e6
+
+Z(2):0.8594
+
+Pressao (3) (kgf/cm2):149.44
+
+Gas Produzido (3)(m3 std):12.799e6
+
+Z(3):0.8567
+
+Dc: 0.78
+
+Mc: 138
+
+Bgi (m3/m3std): 0.0052622
+
+Vc (m3) (1): 15.9
+
+Vw (m3) (1): 1.6
+
+Vc (m3) (2): 16.7
+
+Vw (m3) (2): 1.9
+
+Vc (m3) (3): 17.3
+
+Vw (m3) (3): 2.2
+
+Gpt(m3 std)                             (P/Z)(kgf/cm2)
+2.24123e+06                             236.736
+6.26274e+06                             206.621
+1.28042e+07                             174.437
+
+
+Regressao Linear
+G (m3 std) = -a/b = 4.25875e+07
+
+

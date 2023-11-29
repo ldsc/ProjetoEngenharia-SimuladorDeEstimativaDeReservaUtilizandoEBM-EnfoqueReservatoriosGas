@@ -1,0 +1,103 @@
+Tipo de Fluido:
+(1)Gas
+(2)Oleo
+1
+
+Tipo de mecanismo:
+(1)Volumetrico de Gas Seco
+(2)Anormalmente Pressurizado
+(3)Sob Influxo de Agua
+(4)Sob Influxo de agua Modelo Pot Aquifer
+(5)Sob Influxo de agua Modelo Schilthuis
+(6)Gas Condensado Nao Retrogrado
+(7)Gas Condensado Retrogrado
+2
+
+Numero de medicoes:11
+
+Pressao (1) (kgf/cm2):805
+
+Gas Produzido (1)(m3 std):0
+
+Z(1):1.496
+
+Pressao (2) (kgf/cm2):712
+
+Gas Produzido (2)(m3 std):81e6
+
+Z(2):1.397
+
+Pressao (3) (kgf/cm2):651
+
+Gas Produzido (3)(m3 std):152e6
+
+Z(3):1.330
+
+Pressao (4) (kgf/cm2):603
+
+Gas Produzido (4)(m3 std):220e6
+
+Z(4):1.280
+
+Pressao (5) (kgf/cm2):556
+
+Gas Produzido (5)(m3 std):287e6
+
+Z(5):1.230
+
+Pressao (6) (kgf/cm2):519
+
+Gas Produzido (6)(m3 std):341e6
+
+Z(6):1.192
+
+Pressao (7) (kgf/cm2):482
+
+Gas Produzido (7)(m3 std):411e6
+
+Z(7):1.154
+
+Pressao (8) (kgf/cm2):449
+
+Gas Produzido (8)(m3 std):455e6
+
+Z(8):1.122
+
+Pressao (9) (kgf/cm2):410
+
+Gas Produzido (9)(m3 std):516e6
+
+Z(9):1.084
+
+Pressao (10) (kgf/cm2):352
+
+Gas Produzido (10)(m3 std):611e6
+
+Z(10):1.033
+
+Pressao (11) (kgf/cm2):293
+
+Gas Produzido (11)(m3 std):696e6
+
+Z(11):0.998
+Saturacao Inicial de Agua: 0.22
+Compressibilidade da agua ((kgf/cm2)^-1): 4.3e-5
+Compressibilidade da formacao ((kgf/cm2)^-1): 27.7e-5
+
+Gp(m3 std)                     (P/Z)*(1-Cewf*dP)(kgf/cm2)
+0                                       538.102
+8.1e+07                                 492.256
+1.52e+08                                461.79
+2.2e+08                                 436.145
+2.87e+08                                410.696
+3.41e+08                                389.67
+4.11e+08                                368.131
+4.55e+08                                347.858
+5.16e+08                                323.361
+6.11e+08                                284.065
+6.96e+08                                238.382
+
+
+Regressao Linear
+G (m3 std) = -a/b = 1.29833e+09
+
