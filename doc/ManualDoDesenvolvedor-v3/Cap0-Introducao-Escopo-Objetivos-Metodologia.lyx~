@@ -1,0 +1,529 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introdução
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{SeuNomeAqui} 
+\backslash
+rfoot{
+\backslash
+today}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Substitua "SeuNomeAqui" por seu nome e sobrenome
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jamais retire o 
+\backslash
+today ele vai colocar data no material impresso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No presente trabalho desenvolve-se um simulador de estimativa de reserva
+ de reservatório utilizando EBM, com enfoque nos reservatórios de gás, um
+ software desenvolvido usando-se a linguagem C++
+\series bold
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+A linguagem utilizada é uma linguagem orientada a objeto, que utiliza o
+ conceito de classes, o que facilita na criação de programas complexos,
+ como os de engenharia.
+ É uma linguagem de alto nível, fortemente tipada.
+ É amplamente utilizada para montagem de sistemas operacionais como Windows,
+ GNU/Linux, e programas como o Lyx, Office e OpenOffice.
+\end_layout
+
+\end_inset
+
+
+\series default
+ e paradigma de orientação a objetos, que tem como principal objetivo implementa
+r as equações de balanço de materias vistas na disciplina de Engenharia
+ de Reservatório para os diferentes mecanismo de produção de petróleo.
+ Dessa forma, a principal finalidade do programa é fornecer uma estimativa
+ do volume original de óleo ou gás do reservatório.
+
+\series bold
+ Além dos mecanismos de produção convencionais, o simulador também é capaz
+ de modelar a injeção de água e gás ou uma mistura de fluidos.
+
+\series default
+ Também é dado um enfoque em reservatórios de gás e gás condensado, incluindo,
+ por exemplo, o seu comportamento quando há influxo de água, e alguns modelos
+ para o cálculo deste influxo
+\end_layout
+
+\begin_layout Section
+Escopo do problema
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na indústria do petróleo é fundamental ter uma estimativa da reserva de
+ óleo ou gás de um campo.
+ Além disso, é importante ter uma previsão do comportamento do reservatório
+ antes de começar a produzir e durante toda a sua vida produtiva.
+ Tais estimativas são importantes por diversos fatores, tais como: Estudo
+ de Viabilidade Técnica e Economica (EVTE), declaração de comercialidade
+ para a ANP, tomada de decisões estratégicas (investir ou abandonar um campo).
+\end_layout
+
+\begin_layout Standard
+Para fazer as estimativas de uma acumulação petrolífera se faz uso da Equação
+ de Balanço de Materiais (EBM), que é um balanço de massas dos fluidos existente
+s no interior dos poros das rochas-reservatório.
+ Suas principais utilizações práticas são a determinação do volume original
+ de óleo, a determinação do volume original de gás e a previsão do comportamento
+ do reservatório.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos da primeira versão do trabalho são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desenvolver uma solução para determinar o volume original de fluido no reservató
+rio.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Selecionar o tipo de fluido presente no reservatório.
+\end_layout
+
+\begin_layout Itemize
+Selecionar o mecanismo de produção.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Objetivos - V2
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos-v2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste trabalho são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desenvolver uma solução para determinar o volume original de fluido (principalme
+nte gás) no reservatório.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Selecionar o tipo de fluido presente no reservatório (gás).
+\end_layout
+
+\begin_layout Itemize
+Selecionar o mecanismo de produção.
+\end_layout
+
+\begin_layout Itemize
+Quando houver influxo de água, escolher o modelo que será utilizado para
+ o cálculo deste influxo.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Objetivos - V3
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos-v3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Objetivo geral:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Aperfeiçoar a solução para determinar o volume original de fluido (principalment
+e gás) no reservatório, incluindo a modelagem de diferentes mecanismos de
+ produção e a injeção de fluidos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Objetivos específicos:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Implementar classes e métodos para representar a injeção de água, gás, polímero,
+ surfactante, vapor e gás lift no reservatório.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Aprimorar a flexibilidade do programa para lidar com uma variedade de cenários
+ de produção e injeção.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Refinar a lógica de cálculo do volume original de fluido para considerar
+ os efeitos das novas classes de injeção.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+As EBM foram implementadas no segundo semestre de 2012 pelos alunos Leonardo
+ Mesquita Caetano e Thiago Pessanha de Macedo.
+ No segundo semestre de 2014, Jalile Bartole Pereira e Thaísa de Castro
+ Aleixo fizeram a ampliação deste código, adicionando novas premissas para
+ a determinação do volume original de gás: considerando-se reservatórios
+ de gás condensado (retrógrado e não retrógrado), analisando-se a influência
+ dos aquíferos e detalhando o comportamento de alguns modelos de influxo.
+ 
+\series bold
+Nesta versão do projeto, o código foi estendido para inclur a modelagem
+ da injeção de fluidos ao reservatório, aumentando a gama de cenários de
+ simulação da produção para determinar o volume original de óleo e gás em
+ reservatórios que estão sendo submetidos a injeção de fluidos.
+\end_layout
+
+\begin_layout Section
+Metodologia utilizada
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Metodologia-utilizada"
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Metodologia utilizada
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O software a ser desenvolvido utiliza a metodologia de engenharia de software
+ apresentada pelo Prof.
+ André Bueno na disciplina de programação e ilustrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Etapas para o desenvolvimento do software"
+
+\end_inset
+
+.
+ Note que o 
+\begin_inset Quotes eld
+\end_inset
+
+Ciclo de Concepção e Análise
+\begin_inset Quotes erd
+\end_inset
+
+ é composto por diversas partes representadas neste trabalho em diferentes
+ capítulos.
+ Os ciclos de planejamento/detalhamento tem seu próprio capítulo, assim
+ como o ciclo de construção - implementação.
+\end_layout
+
+\begin_layout Standard
+Esta metodologia é utilizada nas disciplinas:
+\end_layout
+
+\begin_layout Itemize
+LEP01447 : Programação Orientada a Objeto em C++.
+\end_layout
+
+\begin_layout Itemize
+LEP01446 : Programação Prática.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/EngenhariaSoftware-Geral.png
+	lyxscale 25
+	width 100text%
+	height 85theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Etapas para o desenvolvimento do software
+\shape italic
+ - projeto de engenharia
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Etapas para o desenvolvimento do software"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
