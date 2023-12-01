@@ -34,7 +34,9 @@
 
 
 –   Implementar classes e métodos para representar a injeção de água, gás, polímero, surfactante, vapor e gás lift no reservatório.
+
 –  Aprimorar a flexibilidade do programa para lidar com uma variedade de cenários de produção e injeção.
+
 –  Refinar a lógica de cálculo do volume original de fluido para considerar os efeitos das novas classes de injeção.
 
 

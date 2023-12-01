@@ -143,17 +143,8 @@ name "sec:Versão-0.1"
 \end_layout
 
 \begin_layout Standard
-Na primeira versão foi 
-\shape italic
-...
-\end_layout
-
-\begin_layout Standard
-Note que é um 
-\shape italic
-software
-\shape default
- simples, .
+NAs EBM foram implementadas no segundo semestre de 2012 pelos alunos Leonardo
+ Mesquita Caetano e Thiago Pessanha de Macedo.
  Veja Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
