@@ -1129,18 +1129,6 @@ name "subsec:diagrama de sequência"
 
 \end_layout
 
-\begin_layout Standard
-
-\shape italic
-\emph on
-O diagrama de sequência é uma representação gráfica da interação entre objetos
- em um sistema ao longo do tempo.
- Ele mostra a ordem das mensagens trocadas entre objetos à medida que uma
- operação é executada.
- Abaixo está um exemplo simplificado de um diagrama de sequência para o
- software:
-\end_layout
-
 \begin_layout Subsection
 
 \shape italic
@@ -1170,6 +1158,13 @@ reference "cap:Diagrama-de-sequencia"
 \end_inset
 
 .
+ 
+\shape italic
+\emph on
+É uma representação gráfica da interação entre objetos em um sistema ao
+ longo do tempo.
+ Ele mostra a ordem das mensagens trocadas entre objetos à medida que uma
+ operação é executada.
 \end_layout
 
 \begin_layout Standard
@@ -1239,14 +1234,6 @@ name "subsec: Diagrama de sequência específico"
 \end_layout
 
 \begin_layout Standard
-O Diagrama de Sequência Específico é uma representação visual que descreve
- a interação entre os componentes do software em um cenário específico dentro
- de um sistema.
- Ele mostra como esses componentes colaboram ao longo do tempo para realizar
- uma funcionalidade específica ou completar um cenário de uso.
-\end_layout
-
-\begin_layout Standard
 Veja o 
 \shape italic
 \emph on
@@ -1264,6 +1251,10 @@ noprefix "false"
 \end_inset
 
 .
+ Éuma representação visual que descreve a interação entre os componentes
+ do software em um cenário específico dentro de um sistema.
+ Ele mostra como esses componentes colaboram ao longo do tempo para realizar
+ uma funcionalidade específica ou completar um cenário de uso.
 \end_layout
 
 \begin_layout Standard
@@ -1357,12 +1348,6 @@ name "par:Diagrama-de-colaboração:"
 \end_layout
 
 \begin_layout Standard
-No diagrama de comunicação o foco é a interação e a troca de mensagens e
- dados entre os objetos.
- 
-\end_layout
-
-\begin_layout Standard
 Veja na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1371,7 +1356,9 @@ reference "subsec:Diagrama-de-Comunicação"
 \end_inset
 
  o diagrama de comunicação mostrando a sequência de blablabla.
- Observe que ....
+ No diagrama de comunicação o foco é a interação e a troca de mensagens
+ e dados entre os objetos.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1448,13 +1435,6 @@ name "subsec:diagrama de estados"
 \end_layout
 
 \begin_layout Standard
-Um diagrama de máquina de estado representa os diversos estados que o objeto
- assume e os eventos que ocorrem ao longo de sua vida ou mesmo ao longo
- de um processo (histórico do objeto).
- É usado para modelar aspectos dinâmicos do objeto.
-\end_layout
-
-\begin_layout Standard
 Veja na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1462,8 +1442,11 @@ reference "cap:Diagrama-de-maquina-de-estado"
 
 \end_inset
 
- o diagrama de máquina de estado para o objeto XXX.
- Observe que....
+ o diagrama de máquina de estado para uma ocorrência específica que desencadeia
+ uma transição de estado.
+ Representa os diversos estados que o objeto assume e os eventos que ocorrem
+ ao longo de sua vida ou mesmo ao longo de um processo (histórico do objeto).
+ É usado para modelar aspectos dinâmicos do programa.
 \end_layout
 
 \begin_layout Standard
@@ -1533,12 +1516,6 @@ reference "cap:Diagrama-de-atividades"
 \end_layout
 
 \begin_layout Standard
-...descrever em detalhes uma atividade específica..não pode ser a sequência de
- uso geral, trata-se de um caso específico, detalhado do diagrama de máquina
- de estado.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -1578,22 +1555,6 @@ name "cap:Diagrama-de-atividades"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body

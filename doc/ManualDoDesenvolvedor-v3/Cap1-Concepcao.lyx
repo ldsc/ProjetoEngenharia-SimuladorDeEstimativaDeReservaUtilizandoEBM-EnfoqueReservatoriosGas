@@ -1407,14 +1407,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-....coloque aqui caso de uso geral, descrição + figura(s)...
-\end_layout
-
-\begin_layout Standard
-exemplo...
-\end_layout
-
-\begin_layout Standard
 O diagrama de caso de uso geral da Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1672,7 +1664,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/diagramas/Diagrama_de_Caso_de_Uso_especifico_Salvar_relatório.jpeg
-	width 100text%
+	width 70text%
+	height 50text%
 
 \end_inset
 
@@ -1776,19 +1769,7 @@ name "cap:Diagrama_de_Caso_de_Uso_Gerar_Grafico"
 \end_layout
 
 \begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
 
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body

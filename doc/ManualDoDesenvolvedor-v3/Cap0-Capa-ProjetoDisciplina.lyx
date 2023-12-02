@@ -845,7 +845,7 @@ LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
 
 \size large
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 O título deve ser o mais claro possível, não deixando dúvidas sobre o assunto
@@ -887,10 +887,14 @@ COM ENFOQUE NOS RESERVATÓRIOS DE GÁS
 \begin_inset Newline newline
 \end_inset
 
-XXX
-\begin_inset Newline newline
+
+\size default
+
+\begin_inset VSpace 1cm
 \end_inset
 
+
+\size large
 TRABALHO DA DISCIPLINA PROGRAMAÇÃO PRÁTICA
 \end_layout
 
@@ -985,7 +989,7 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-Janeiro - 2023
+Dezembro - 2023
 \end_layout
 
 \end_body

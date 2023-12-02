@@ -148,23 +148,36 @@ name "sec:Elaboração"
 \end_layout
 
 \begin_layout Standard
-Depois da definição dos objetivos, da especificação do software e da montagem
- dos primeiros diagramas de caso de uso, a equipe de desenvolvimento do
- projeto de engenharia passa por um processo de elaboração que envolve o
- estudo de conceitos relacionados ao sistema a ser desenvolvido, a análise
- de domínio e a identificação de pacotes.
- 
+Nesse estágio, o foco se volta para o aprimoramento dos conceitos relacionados
+ ao sistema a ser desenvolvido, envolvendo a análise aprofundada do domínio
+ do problema e a identificação de pacotes que comporão a arquitetura do
+ sistema.
 \end_layout
 
 \begin_layout Standard
-Na elaboração fazemos uma análise dos requisitos, ajustando os requisitos
- iniciais de forma a desenvolver um sistema útil, que atenda às necessidades
- do usuário e, na medida do possível, permita seu reuso e futura extensão.
+A elaboração é marcada por uma análise minuciosa dos requisitos, visando
+ ajustar as diretrizes iniciais de modo a conceber um sistema que não apenas
+ atenda às necessidades do usuário, mas também proporcione flexibilidade
+ para reuso e futuras extensões.
+ Durante esse processo, são identificados e eliminados requisitos considerados
+ "impossíveis" ou inviáveis, e a concepção do sistema é ajustada para otimizar
+ sua utilidade e adaptabilidade.
 \end_layout
 
 \begin_layout Standard
-Eliminam-se os requisitos "impossíveis" e ajusta-se a idéia do sistema de
- forma que este seja flexível, considerando-se aspectos como custos e prazos.
+A flexibilidade é um ponto-chave, levando em consideração aspectos como
+ custos e prazos.
+ A equipe busca criar uma estrutura que possa se adaptar a mudanças, seja
+ na evolução das necessidades do usuário ou em resposta a novos desafios.
+ Isso contribui para a robustez do sistema ao longo do tempo, garantindo
+ que ele possa ser expandido e mantido de maneira eficiente.
+\end_layout
+
+\begin_layout Standard
+Além disso, a elaboração envolve a identificação de pacotes, que são conjuntos
+ lógicos de funcionalidades ou módulos que compõem a arquitetura do sistema.
+ Essa subdivisão ajuda a organizar e estruturar o desenvolvimento, facilitando
+ a compreensão e manutenção do sistema.
 \end_layout
 
 \begin_layout Section
@@ -1446,19 +1459,7 @@ name "fig:Diagrama-de-Pacotes"
 \end_layout
 
 \begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
 
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body

@@ -5,16 +5,18 @@
 
 
 * Resumo e/ou informação extra: 
-- Desenvolver uma solução para determinar o volume original de fluido (principalmente gás) no reservatório.
-- Selecionar o tipo de fluido presente no reservatório (gás).
-– Selecionar o mecanismo de produção.
-– Quando houver influxo de água, escolher o modelo que será utilizado para o cálculo deste influxo.
+- Aperfeiçoar a solução para determinar o volume original de fluido (principalmente gás) no reservatório, incluindo a modelagem de diferentes mecanismos de produção e a injeção de fluidos.
+
+
+–   Implementar classes e métodos para representar a injeção de água, gás, polímero, surfactante, vapor e gás lift no reservatório.
+–  Aprimorar a flexibilidade do programa para lidar com uma variedade de cenários de produção e injeção.
+–  Refinar a lógica de cálculo do volume original de fluido para considerar os efeitos das novas classes de injeção.
 
 * Versão: 
-- 2.0.
+- 3.0.
 
 * Data:
-- 2014/2 - segundo semestre.
+- 2023/2 - segundo semestre.
   
 * Autor de Contato:
 - André Duarte Bueno <andreduartebueno@gmail.com>
@@ -28,7 +30,7 @@
 
 * Áreas de pesquisa vinculadas: 
 - Modelagem Matemática Computacional
-- Engenharia de Reservatório  
+- Engenharia de Reservatório 
 
 * Vinculo com: 
 - Trabalho da disciplina de programação prática.
