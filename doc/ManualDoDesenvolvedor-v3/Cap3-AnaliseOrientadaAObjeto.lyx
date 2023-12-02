@@ -208,6 +208,14 @@ name "sec:Diagramas-de-classes"
 \end_layout
 
 \begin_layout Standard
+O diagrama de classes é uma representação visual das classes que compõem
+ um sistema, juntamente com seus atributos, métodos e relacionamentos.
+ No contexto do software que estamos discutindo, que envolve simulações
+ e análises de reservatórios de gás e óleo, o diagrama de classes pode ser
+ estruturado da seguinte forma:
+\end_layout
+
+\begin_layout Standard
 O diagrama de classes é apresentado na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -487,10 +495,10 @@ método CResGasPres: representa o construtor da classe.
 \begin_layout Itemize
 
 \series bold
-Classe CResGasSecoInf: representa os conceitos fundamentais do mecanismo
- de gás com influxo de água.
+C
 \series default
-
+lasse CResGasSecoInf: representa os conceitos fundamentais do mecanismo
+ de gás com influxo de água.
 \begin_inset Separator latexpar
 \end_inset
 
@@ -499,39 +507,27 @@ Classe CResGasSecoInf: representa os conceitos fundamentais do mecanismo
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 atributo we [m³]: respresenta o influxo acumulado do aquífero.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo bg [m³/m³ std]: representa o fator volume de formação para cada
  histórico de produção.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo bgi [m³/m³ std]: representa o fator volume de formação inicial
  para cada histórico de produção.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 método CResGasSecoInf: representa o construtor da classe.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Classe CResGasSecoInfPotAquifer: representa os conceitos do mecanismo de
  gás com influxo de água, utilizando o método Pot Aquifer.
-\series default
-
 \begin_inset Separator latexpar
 \end_inset
 
@@ -540,90 +536,56 @@ Classe CResGasSecoInfPotAquifer: representa os conceitos do mecanismo de
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 atributo we [m³]: respresenta o influxo acumulado do aquífero.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo bg [m³/m³ std]: representa o fator volume de formação para cada
  histórico de produção.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo bgi [m³/m³ std]: representa o fator volume de formação inicial
  para cada histórico de produção.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo deltap [kgf/cm²]: representa o diferencial de pressão.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo re [m]: representa o raio do aquífero.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo ro [m]: representa o raio do reservatórioatributo we: respresenta
  o influxo acumulado do aquífero.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo fi: representa a porosidade do aquífero.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo h [m]: representa a espessura do aquífero.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
-atributo cw 
-\series default
-[(kgf/cm²)^-1]
-\series bold
-: representa a compressibilidade da água.
+atributo cw [(kgf/cm²)^-1]: representa a compressibilidade da água.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
-atributo cf 
-\series default
-[(kgf/cm²)^-1]
-\series bold
-: representa a compressibilidade da formação.
+atributo cf [(kgf/cm²)^-1]: representa a compressibilidade da formação.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 método CResGasSecoInfPotAquifer: representa o construtor da classe.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Classe CResGasSecoInfSchilthuis: representa os conceitos do mecanismo de
  gás com influxo de água, utilizando o método de Schilthuis.
-\series default
-
 \begin_inset Separator latexpar
 \end_inset
 
@@ -632,57 +594,39 @@ Classe CResGasSecoInfSchilthuis: representa os conceitos do mecanismo de
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 atributo we [m³]: respresenta o influxo acumulado do aquífero.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo bg [m³/m³ std]: representa o fator volume de formação para cada
  histórico de produção.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo bgi [m³/m³ std]: representa o fator volume de formação inicial
  para cada histórico de produção.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo deltap [kgf/cm²]: representa o diferencial de pressão.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo j [m³/(d*kgf/cm²)]: representa a constante de influxo.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributos t1 e t2 [d]: representam os limites fixos de integração.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 método CResGasSecoInfSchilthuis: representa o construtor da classe.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Classe CResGasCondNaoRetro: representa os conceitos do mecanismo de gás
  condensado não-retrógrado.
-\series default
-
 \begin_inset Separator latexpar
 \end_inset
 
@@ -691,74 +635,50 @@ Classe CResGasCondNaoRetro: representa os conceitos do mecanismo de gás
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 atributo gpp [m³ std]: representa o volume de gás produzido parcial.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo gec [m³ std]: representa o volume de gás condensado equivalente.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo gew [m³ std]: representa o volume de vapor d'água equivalente.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo gpt [m³ std]: representa o volume total de gás produzido.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo vw [m³]: representa o volume de água produzida.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo vc [m³]: representa o volume de gás condensado produzido.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo dc: representa a densidade do gás.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo mc: representa a massa de condensado.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo bgi [m³/m³ std]: representa o fator volume de formação inicial
  para cada histórico de produção.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 método CResGasCondNaoRetro: representa o construtor da classe.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Classe CResGasCondRetro: representa os conceitos do mecanismo de gás condensado
  retrógrado.
-\series default
-
 \begin_inset Separator latexpar
 \end_inset
 
@@ -767,57 +687,39 @@ Classe CResGasCondRetro: representa os conceitos do mecanismo de gás condensado
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 atributo bgi [m³/m³ std]: representa o fator volume de formação inicial
  para cada histórico de produção.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo sl: representa a saturação de líquido no reservatório.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo n1: número de mols de líquido.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo n2: número de mols de líquido.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo temp [K]: temperatura do gás 
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo dl: representa a densidade do líquido.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo ml: representa a massa do líquido.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo z2f: representa o fator de compressibilidade de duas fases.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 método CResGasCondRetro: representa o construtor da classe.
 \end_layout
 
@@ -908,199 +810,281 @@ método COilInf: representa o construtor da classe.
 
 \end_deeper
 \begin_layout Itemize
+
+\series bold
 Classe CInjAgua: representa os conceitos de injeção de água no reservatório.
  
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-q: Taxa de injeção de água (m³/dia).
+
+\series bold
+atributo q: Taxa de injeção de água (m³/dia).
  
 \end_layout
 
 \begin_layout Itemize
-cw: Compressibilidade da água [(kgf/cm²)^-1].
+
+\series bold
+atributo cw: Compressibilidade da água [(kgf/cm²)^-1].
  
 \end_layout
 
 \begin_layout Itemize
-pwi: Pressão inicial da água na injeção (kgf/cm²).
+
+\series bold
+atributo pwi: Pressão inicial da água na injeção (kgf/cm²).
 \end_layout
 
 \begin_layout Itemize
-Construtor da classe CInjAgua
+
+\series bold
+atributo método CInjAgua: Construtor da classe CInjAgua
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-class CInjGas: """ Classe que representa os conceitos de injeção de gás
+
+\series bold
+Classe CInjGas: representa os conceitos de injeção de gás no reservatório.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+atributo - q: Taxa de injeção de gás (m³/dia).
+ - 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo cg: Compressibilidade do gás [(kgf/cm²)^-1].
+ - 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo pwgi: Pressão inicial do gás na injeção (kgf/cm²).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+método CInjGas: Construtor da classe CInjGas
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Classe CInjPolimero: representa os conceitos de injeção de polímero no reservató
+rio.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+atributo q: Taxa de injeção de polímero (m³/dia).
+ - 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo muw: Viscosidade da água (cP).
+ - 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo mug: Viscosidade do gás (cP).
+ - 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo cw: Compressibilidade da água [(kgf/cm²)^-1].
+ - 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo cpwi: Pressão inicial do polímero na injeção (kgf/cm²).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+método CInjPolimero: Construtor da classe CInjPolimero
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Classe CInjSurfactante: representa os conceitos de injeção de surfactante
  no reservatório.
- Construtor da classe CInjGas.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-- q: Taxa de injeção de gás (m³/dia).
- - 
-\end_layout
-
-\begin_layout Itemize
-cg: Compressibilidade do gás [(kgf/cm²)^-1].
- - 
-\end_layout
-
-\begin_layout Itemize
-pwgi: Pressão inicial do gás na injeção (kgf/cm²).
  
 \end_layout
 
-\begin_layout Itemize
-Construtor da classe CInjGas
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-class CInjPolimero: """ Classe que representa os conceitos de injeção de
- polímero no reservatório.
- Construtor da classe CInjPolimero.
-\end_layout
-
 \begin_deeper
 \begin_layout Itemize
-q: Taxa de injeção de polímero (m³/dia).
+
+\series bold
+atributo q: Taxa de injeção de surfactante (m³/dia).
  - 
 \end_layout
 
 \begin_layout Itemize
-muw: Viscosidade da água (cP).
+
+\series bold
+atributo muw: Viscosidade da água (cP).
  - 
 \end_layout
 
 \begin_layout Itemize
-mug: Viscosidade do gás (cP).
+
+\series bold
+atributo mug: Viscosidade do gás (cP).
  - 
 \end_layout
 
 \begin_layout Itemize
-cw: Compressibilidade da água [(kgf/cm²)^-1].
- - 
-\end_layout
 
-\begin_layout Itemize
-cpwi: Pressão inicial do polímero na injeção (kgf/cm²).
- 
-\end_layout
-
-\begin_layout Itemize
-Construtor da classe CInjPolimero
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-class CInjSurfactante: """ Classe que representa os conceitos de injeção
- de surfactante no reservatório.
- Construtor da classe CInjSurfactante.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-q: Taxa de injeção de surfactante (m³/dia).
- - 
-\end_layout
-
-\begin_layout Itemize
-muw: Viscosidade da água (cP).
- - 
-\end_layout
-
-\begin_layout Itemize
-mug: Viscosidade do gás (cP).
- - 
-\end_layout
-
-\begin_layout Itemize
-cw: Compressibilidade da água [(kgf/cm²)^-1].
+\series bold
+atributo cw: Compressibilidade da água [(kgf/cm²)^-1].
  -
 \end_layout
 
 \begin_layout Itemize
-cs: Compressibilidade do surfactante [(kgf/cm²)^-1].
+
+\series bold
+atributo cs: Compressibilidade do surfactante [(kgf/cm²)^-1].
  - 
 \end_layout
 
 \begin_layout Itemize
-cpwi: Pressão inicial do surfactante na injeção (kgf/cm²).
+
+\series bold
+atributo cpwi: Pressão inicial do surfactante na injeção (kgf/cm²).
  
 \end_layout
 
 \begin_layout Itemize
-Construtor da classe CInjSurfactante.
+
+\series bold
+método CInjSurfactante: Construtor da classe CInjSurfactante.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-class CInjVapor: """ Classe que representa os conceitos de injeção de vapor
- no reservatório.
+
+\series bold
+Classe CInjVapor: representa os conceitos de injeção de vapor no reservatório.
  Construtor da classe CInjVapor.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-q: Taxa de injeção de vapor (m³/dia).
+
+\series bold
+atributo q: Taxa de injeção de vapor (m³/dia).
  - 
 \end_layout
 
 \begin_layout Itemize
-muw: Viscosidade da água (cP).
+
+\series bold
+atributo muw: Viscosidade da água (cP).
  - 
 \end_layout
 
 \begin_layout Itemize
-mug: Viscosidade do gás (cP).
+
+\series bold
+atributo mug: Viscosidade do gás (cP).
  - 
 \end_layout
 
 \begin_layout Itemize
-cw: Compressibilidade da água [(kgf/cm²)^-1].
+
+\series bold
+atributo cw: Compressibilidade da água [(kgf/cm²)^-1].
  - 
 \end_layout
 
 \begin_layout Itemize
-cv: Compressibilidade do vapor [(kgf/cm²)^-1].
+
+\series bold
+atributo cv: Compressibilidade do vapor [(kgf/cm²)^-1].
  - 
 \end_layout
 
 \begin_layout Itemize
-cpwi: Pressão inicial do vapor na injeção (kgf/cm²).
+
+\series bold
+atributo cpwi: Pressão inicial do vapor na injeção (kgf/cm²).
  
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+método CInjVapor: Construtor da classe CInjVapor.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-class CInjGasLift: """ Classe que representa os conceitos de injeção de
- gás lift no reservatório.
- Construtor da classe CInjGasLift.
+
+\series bold
+Classe CInjGasLift: representa os conceitos de injeção de gás lift no reservatór
+io.
+ 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-q: Taxa de injeção de gás lift (m³/dia).
+
+\series bold
+atributo q: Taxa de injeção de gás lift (m³/dia).
  - 
 \end_layout
 
 \begin_layout Itemize
-cg: Compressibilidade do gás [(kgf/cm²)^-1].
+
+\series bold
+atributo cg: Compressibilidade do gás [(kgf/cm²)^-1].
  - 
 \end_layout
 
 \begin_layout Itemize
-pwgi: Pressão inicial do gás lift na injeção (kgf/cm²).
+
+\series bold
+atributo pwgi: Pressão inicial do gás lift na injeção (kgf/cm²).
  - 
 \end_layout
 
 \begin_layout Itemize
-depth: Profundidade do poço (m).
+
+\series bold
+atributo depth: Profundidade do poço (m).
  
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+método CInjGasLift: Construtor da classe CInjGasLift.
 \end_layout
 
 \end_deeper
@@ -1149,12 +1133,12 @@ name "subsec:diagrama de sequência"
 
 \shape italic
 \emph on
-O diagrama de seqüência enfatiza a troca de eventos e mensagens e sua ordem
- temporal.
- Contém informações sobre o fluxo de controle do software.
- Costuma ser montado a partir de um diagrama de caso de uso e estabelece
- o relacionamento dos atores (usuários e sistemas externos) com alguns objetos
- do sistema.
+O diagrama de sequência é uma representação gráfica da interação entre objetos
+ em um sistema ao longo do tempo.
+ Ele mostra a ordem das mensagens trocadas entre objetos à medida que uma
+ operação é executada.
+ Abaixo está um exemplo simplificado de um diagrama de sequência para o
+ software:
 \end_layout
 
 \begin_layout Subsection
@@ -1186,11 +1170,6 @@ reference "cap:Diagrama-de-sequencia"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Itemize
-[Aqui a ênfase é o entendimento da sequência com que as mensagens são trocadas,
- a ordem temporal.]
 \end_layout
 
 \begin_layout Standard
@@ -1257,6 +1236,14 @@ name "subsec: Diagrama de sequência específico"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+O Diagrama de Sequência Específico é uma representação visual que descreve
+ a interação entre os componentes do software em um cenário específico dentro
+ de um sistema.
+ Ele mostra como esses componentes colaboram ao longo do tempo para realizar
+ uma funcionalidade específica ou completar um cenário de uso.
 \end_layout
 
 \begin_layout Standard
@@ -1533,10 +1520,6 @@ name "sec: Diagrama de atividades"
 \end_layout
 
 \begin_layout Standard
-.....
-\end_layout
-
-\begin_layout Standard
 Veja na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1553,20 +1536,6 @@ reference "cap:Diagrama-de-atividades"
 ...descrever em detalhes uma atividade específica..não pode ser a sequência de
  uso geral, trata-se de um caso específico, detalhado do diagrama de máquina
  de estado.
-\end_layout
-
-\begin_layout Itemize
-Lembrar que o diagrama de sequência é a representação de um método de cálculo
- específico.
- 
-\end_layout
-
-\begin_layout Itemize
-Não é para fazer o diagrama de atividades do método de gerenciamento!!!
-\end_layout
-
-\begin_layout Itemize
-Coloque aqui um diagrama de atividades que mostra contas/cálculos! 
 \end_layout
 
 \begin_layout Standard

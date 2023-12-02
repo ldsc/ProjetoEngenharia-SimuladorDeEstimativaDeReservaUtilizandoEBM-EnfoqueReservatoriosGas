@@ -165,19 +165,12 @@ name "sec:Projeto-do-sistema"
 
 \begin_layout Standard
 Depois da análise orientada a objeto desenvolve-se o projeto do sistema,
- qual envolve etapas como a definição dos protocolos, da interface API,
+ o qual envolve etapas como a definição dos protocolos, da interface API,
  o uso de recursos, a subdivisão do sistema em subsistemas, a alocação dos
  subsistemas ao hardware e a seleção das estruturas de controle, a seleção
  das plataformas do sistema, das bibliotecas externas, dos padrões de projeto,
  além da tomada de decisões conceituais e políticas que formam a infraestrutura
  do projeto.
-\end_layout
-
-\begin_layout Standard
-Deve-se definir padrões de documentação, padrões para o nome das classes,
- padrões de retorno e de parâmetros em métodos, características da interface
- do usuário e características de desempenho.
- 
 \end_layout
 
 \begin_layout Standard
@@ -191,7 +184,7 @@ literal "true"
 
 , o projeto do sistema é a estratégia de alto nível para resolver o problema
  e elaborar uma solução.
- Você deve se preocupar com itens como: 
+ Gerando itens como: 
 \end_layout
 
 \begin_layout Enumerate
@@ -214,63 +207,54 @@ Protocolos
 
 \begin_deeper
 \begin_layout Itemize
-Definição dos protocolos de comunicação entre os diversos elementos externos
- 
-\begin_inset Newline newline
-\end_inset
-
-(como dispositivos).
- Por exemplo: se o sistema envolve o uso dos nós de um cluster, devem ser
- considerados aspectos como o protocolo de comunicação entre os nós do cluster.
-\begin_inset Separator latexpar
-\end_inset
-
-
+Protocolos de Comunicação Externa 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabl
+No contexto deste software, será estabelecido um protocolo de comunicação
+ entre os diferentes elementos externos, especialmente dispositivos.
+ Se o sistema envolve a utilização de nós em um cluster, será necessário
+ considerar cuidadosamente os aspectos relacionados ao protocolo de comunicação
+ entre esses nós.
+ Essa definição garantirá uma integração eficiente e confiável, promovendo
+ uma troca de dados suave entre os dispositivos.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Definição dos protocolos de comunicação entre os diversos elementos internos
- 
-\begin_inset Newline newline
-\end_inset
-
-(como objetos).
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
+Protocolos de Comunicação Interna 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Internamente, o software definirá protocolos de comunicação entre diversos
+ elementos, como objetos.
+ Essa definição visa estabelecer diretrizes claras para interações eficientes
+ entre diferentes partes do sistema.
+ A padronização interna contribuirá para a coesão do sistema, facilitando
+ a manutenção e compreensão do código.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Definição da interface API de suas bibliotecas e sistemas.
-\begin_inset Separator latexpar
-\end_inset
-
-
+Interface API de Bibliotecas e Sistema
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Será definida uma Interface API clara e bem documentada para todas as biblioteca
+s e sistemas integrados ao software.
+ Isso proporcionará uma experiência consistente para os desenvolvedores
+ que utilizarão ou estenderão funcionalidades do sistema.
+ A documentação detalhada será uma parte essencial dessa definição, assegurando
+ que os usuários compreendam como interagir efetivamente com as funcionalidades
+ disponíveis.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Definição do formato dos arquivos gerados pelo software.
- Por exemplo: prefira formatos abertos, como arquivos txt e xml.
+Formato dos Arquivos Gerados
 \begin_inset Separator latexpar
 \end_inset
 
@@ -279,7 +263,13 @@ Definição do formato dos arquivos gerados pelo software.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+O formato dos arquivos gerados pelo software será definido com a preferência
+ por formatos abertos, como arquivos txt e xml.
+ Isso visa garantir que os dados gerados pelo sistema sejam acessíveis e
+ interoperáveis, promovendo a flexibilidade na utilização desses dados por
+ outros sistemas ou ferramentas.
+ A escolha de formatos abertos contribui para a portabilidade e preservação
+ a longo prazo dos dados.
 \end_layout
 
 \end_deeper
@@ -304,9 +294,7 @@ Recursos
 
 \begin_deeper
 \begin_layout Itemize
-Identificação e alocação dos recursos globais, como os recursos do sistema
- serão alocados, utilizados, compartilhados e liberados.
- Implicam modificações no diagrama de componentes.
+Identificação e Alocação de Recursos Globais
 \begin_inset Separator latexpar
 \end_inset
 
@@ -315,13 +303,17 @@ Identificação e alocação dos recursos globais, como os recursos do sistema
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Neste projeto, será realizada a identificação e alocação dos recursos globais
+ do sistema.
+ Isso inclui definir como esses recursos serão alocados, utilizados, compartilha
+dos e liberados durante a execução do software.
+ Essa etapa implicará modificações no diagrama de componentes para refletir
+ a distribuição e interação desses recursos.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Identificação da necessidade do uso de banco de dados.
- Implicam em modificações nos diagramas de atividades e de componentes.
+Necessidade de Banco de Dados
 \begin_inset Separator latexpar
 \end_inset
 
@@ -330,17 +322,17 @@ Identificação da necessidade do uso de banco de dados.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Será feita a identificação da necessidade de utilização de um banco de dados
+ no contexto deste software.
+ Essa identificação levará a modificações nos diagramas de atividades e
+ componentes para integrar eficientemente o banco de dados ao sistema.
+ Será considerada a escolha do tipo de banco de dados mais apropriado para
+ atender aos requisitos de armazenamento e recuperação de dados.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Identificação da necessidade de sistemas de armazenamento de massa.
- Por exemplo: um 
-\emph on
-storage
-\emph default
- em um sistema de cluster ou sistemas de backup.
+Necessidade de Sistemas de Armazenamento em Massa
 \begin_inset Separator latexpar
 \end_inset
 
@@ -349,7 +341,13 @@ storage
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+No âmbito deste projeto, será identificada a necessidade de sistemas de
+ armazenamento em massa.
+ Exemplos incluem a possibilidade de integrar um storage em um sistema de
+ cluster ou a implementação de sistemas de backup.
+ Essa identificação implicará modificações nos diagramas de atividades e
+ componentes para incorporar adequadamente esses sistemas, garantindo um
+ gerenciamento eficiente e seguro de grandes volumes de dados.
 \end_layout
 
 \end_deeper
@@ -374,24 +372,25 @@ Controle
 
 \begin_deeper
 \begin_layout Itemize
-Identificação e seleção da implementação de controle, seqüencial ou concorrente,
+Identificação e Seleção da Implementação de Controle
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Neste projeto, será realizada a identificação e seleção da implementação
+ de controle, considerando opções como controle sequencial ou concorrente,
  baseado em procedimentos ou eventos.
- Implicam modificações no diagrama de execução.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
+ Essa decisão terá impacto nas modificações do diagrama de execução, refletindo
+ como o sistema responde a diferentes eventos e interações.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Identificação das condições extremas e de prioridades.
+Identificação de Condições Extremas e Prioridades
 \begin_inset Separator latexpar
 \end_inset
 
@@ -400,14 +399,15 @@ Identificação das condições extremas e de prioridades.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Serão identificadas as condições extremas que podem ocorrer durante a execução
+ do software, e será dada prioridade a essas situações.
+ Essa análise influenciará as modificações no diagrama de execução para
+ garantir que o sistema responda eficazmente em circunstâncias críticas.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Identificação da necessidade de otimização.
- Por exemplo: prefira sistemas com grande capacidade de memória; prefira
- vários hds pequenos a um grande.
+Necessidade de Otimização
 \begin_inset Separator latexpar
 \end_inset
 
@@ -416,17 +416,16 @@ Identificação da necessidade de otimização.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Neste projeto, será identificada a necessidade de otimização, considerando
+ fatores como capacidade de memória e a preferência por vários discos rígidos
+ menores em vez de um grande.
+ Essa identificação levará a modificações nas estratégias de implementação
+ e será refletida no diagrama de execução.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Identificação e definição de 
-\emph on
-loops
-\emph default
- de controle e das escalas de tempo.
- 
+Identificação e Definição de Loops de Controle e Escalas de Tempo 
 \begin_inset Separator latexpar
 \end_inset
 
@@ -435,14 +434,16 @@ loops
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Serão identificados e definidos os loops de controle necessários para o
+ funcionamento eficiente do sistema.
+ Isso incluirá a especificação das escalas de tempo para diferentes processos.
+ As modificações correspondentes serão realizadas no diagrama de execução
+ para representar esses loops e escalas de tempo.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Identificação de concorrências – quais algoritmos podem ser implementados
- usando processamento paralelo.
- 
+Identificação de Concorrências
 \begin_inset Separator latexpar
 \end_inset
 
@@ -451,7 +452,10 @@ Identificação de concorrências – quais algoritmos podem ser implementados
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Serão identificadas as situações em que algoritmos podem ser implementados
+ usando processamento paralelo para otimização de desempenho.
+ Essa identificação terá impacto nas modificações do diagrama de execução,
+ refletindo a implementação de concorrências quando aplicável.
 \end_layout
 
 \end_deeper
@@ -476,8 +480,7 @@ Plataformas
 
 \begin_deeper
 \begin_layout Itemize
-Identificação das estruturas arquitetônicas comuns.
- 
+Identificação das Estruturas Arquitetônicas Comuns
 \begin_inset Separator latexpar
 \end_inset
 
@@ -486,15 +489,15 @@ Identificação das estruturas arquitetônicas comuns.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Neste projeto, serão identificadas as estruturas arquitetônicas comuns necessári
+as para o funcionamento do software.
+ Isso incluirá a definição de componentes essenciais que serão utilizados
+ de forma geral no sistema.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Identificação de subsistemas relacionados à plataforma selecionada.
- Podem implicar em modificações no diagrama de pacotes e no diagrama de
- componentes.
- 
+Identificação de Subsistemas Relacionados à Plataforma Selecionada
 \begin_inset Separator latexpar
 \end_inset
 
@@ -503,13 +506,15 @@ Identificação de subsistemas relacionados à plataforma selecionada.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Serão identificados subsistemas que estão diretamente relacionados à plataforma
+ escolhida para a implementação do software.
+ Essa identificação poderá implicar em modificações nos diagramas de pacotes
+ e componentes, refletindo a integração desses subsistemas.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Identificação e definição das plataformas a serem suportadas: hardware,
- sistema operacional e linguagem de software.
+Identificação e Definição das Plataformas a Serem Suportadas
 \begin_inset Separator latexpar
 \end_inset
 
@@ -518,12 +523,17 @@ Identificação e definição das plataformas a serem suportadas: hardware,
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Neste projeto, será realizada a identificação e definição das plataformas
+ que o software irá suportar.
+ Isso incluirá especificações relacionadas ao hardware, sistema operacional
+ e linguagem de software.
+ Essa decisão terá impacto direto na forma como o software será implementado
+ e distribuído.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Seleção das bibliotecas externas a serem utilizadas.
+Seleção de Bibliotecas Externas
 \begin_inset Separator latexpar
 \end_inset
 
@@ -532,13 +542,15 @@ Seleção das bibliotecas externas a serem utilizadas.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Serão selecionadas as bibliotecas externas necessárias para complementar
+ as funcionalidades do software.
+ Essa seleção considerará a eficiência, confiabilidade e compatibilidade
+ das bibliotecas com a plataforma escolhida.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Seleção da biblioteca utilizada para montar a interface gráfica do software
- – GDI.
+Seleção da Biblioteca para Interface Gráfica - GDI
 \begin_inset Separator latexpar
 \end_inset
 
@@ -547,14 +559,16 @@ Seleção da biblioteca utilizada para montar a interface gráfica do software
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Neste projeto, será realizada a seleção da biblioteca gráfica GDI (Graphics
+ Device Interface) para a construção da interface gráfica do software.
+ Essa escolha será baseada em critérios de desempenho, compatibilidade e
+ recursos oferecidos pela biblioteca.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Seleção do ambiente de desenvolvimento para montar a interface de desenvolviment
-o – IDE.
- 
+Seleção do Ambiente de Desenvolvimento para Interface de Desenvolvimento
+ - IDE 
 \begin_inset Separator latexpar
 \end_inset
 
@@ -563,7 +577,10 @@ o – IDE.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Será selecionado o ambiente de desenvolvimento que melhor se adequa à construção
+ da interface de desenvolvimento do software.
+ Isso incluirá considerações sobre facilidade de uso, suporte a linguagens
+ de programação escolhidas e ferramentas disponíveis.
 \end_layout
 
 \end_deeper
@@ -578,9 +595,7 @@ Padrões de projeto
 
 \begin_deeper
 \begin_layout Itemize
-Normalmente os padrões de projeto são identificados e passam a fazer parte
- de uma biblioteca de padrões da empresa.
- Mas isto só ocorre após a realização de diversos projetos.
+Identificação de Padrões de Projeto
 \begin_inset Separator latexpar
 \end_inset
 
@@ -589,7 +604,49 @@ Normalmente os padrões de projeto são identificados e passam a fazer parte
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Neste projeto, será realizada a identificação e documentação dos padrões
+ de projeto que serão aplicados.
+ Os padrões de projeto representam soluções consolidadas para problemas
+ recorrentes no desenvolvimento de software.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Construção da Biblioteca de Padrões da Empresa
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Os padrões de projeto identificados serão compilados e organizados para
+ formar uma biblioteca de padrões da empresa.
+ Esta biblioteca servirá como referência para futuros projetos, promovendo
+ consistência e boas práticas no desenvolvimento de software.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Aplicação dos Padrões de Projeto no Desenvolvimento
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Durante a fase de implementação, os padrões de projeto identificados serão
+ aplicados de acordo com as necessidades específicas do software.
+ Isso garantirá uma abordagem consistente e eficiente na resolução de problemas
+ de design e desenvolvimento.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Revisão e Adaptação dos Padrões (se necessário)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Caso seja identificada a necessidade de revisão ou adaptação dos padrões
+ de projeto durante o ciclo de vida do projeto, ajustes serão realizados.
+ Isso pode ocorrer com base em experiências específicas do projeto ou mudanças
+ nas melhores práticas da indústria.
 \begin_inset Note Note
 status open
 
@@ -1420,7 +1477,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/DiagramDeExecucao.png
-	lyxscale 50
+	lyxscale 30
 	width 100text%
 
 \end_inset
