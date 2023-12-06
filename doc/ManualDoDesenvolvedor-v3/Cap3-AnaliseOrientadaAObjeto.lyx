@@ -300,7 +300,7 @@ Dicionário de classes
 \end_layout
 
 \begin_layout Itemize
-Classe CRegLin: representa a classe que geral do simulador.
+Classe CSimuladior: representa a classe que geral do simulador.
 \end_layout
 
 \begin_deeper
