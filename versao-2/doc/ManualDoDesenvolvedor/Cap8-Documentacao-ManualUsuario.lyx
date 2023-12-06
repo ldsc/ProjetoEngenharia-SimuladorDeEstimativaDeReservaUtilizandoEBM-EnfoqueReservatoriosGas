@@ -1,0 +1,236 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Documentação 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{APOSTILA DE USO DO PROGRAMA SIMULADOR DE ESTIMATIVA DE RESERVATORIOS
+ UTILIZANDO EBM, COM ENFOQUE NOS RESERVATORIOS DE GAS - Disciplina Engenharia
+ de Reservatório
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+
+\series bold
+SIMULADOR DE ESTIMATIVA DE RESERVA DE RESERVATÓRIO UTILIZANDO EBM, COM ENFOQUE
+ NOS RESERVATÓRIOS DE GÁS
+\end_layout
+
+\begin_layout Section
+Objetivo
+\end_layout
+
+\begin_layout Standard
+O programa tem o objetivo de simular as condições de reservatório para estimar
+ a reserva de gás.
+\end_layout
+
+\begin_layout Section
+Fundamentos
+\end_layout
+
+\begin_layout Standard
+O programa faz a previsão do volume que vai ser encontrado dentro do reservatóri
+o estudado utilizando dados reais obitidos em testes.
+ Com essas informações, utiliza-se a Equação de Balanço de Materiais para
+ fazer a previsão, sendo adaptada de acordo com cada mecanismo.
+\end_layout
+
+\begin_layout Section
+Procedimento
+\end_layout
+
+\begin_layout Enumerate
+Escolher o fluido presente no reservatório:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Para reservatório de gás, escolha 1;
+\end_layout
+
+\begin_layout Enumerate
+Para reservatório de óleo, escolha 2;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Escolher o mecanismo de produção do reservatório:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Em reservatório de gás:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Volumétrico de gás seco, escolha 1;
+\end_layout
+
+\begin_layout Enumerate
+Gás seco anormalmente pressurizado, escolha 2;
+\end_layout
+
+\begin_layout Enumerate
+Gás seco sob influxo de água, escolha 3;
+\end_layout
+
+\begin_layout Enumerate
+Gás seco sob influxo modelo Pot Aquifer, escolha 4;
+\end_layout
+
+\begin_layout Enumerate
+Gás seco sob influxo modelo Schilthuis, escolha 5;
+\end_layout
+
+\begin_layout Enumerate
+Gás condensado não retrógrado, escolha 6;
+\end_layout
+
+\begin_layout Enumerate
+Gás condensado retrógrado, escolha 7;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Em reservatório de óleo:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Com gás em solução, escolha 1;
+\end_layout
+
+\begin_layout Enumerate
+Com capa de gás, escolha 2;
+\end_layout
+
+\begin_layout Enumerate
+Sob influxo de água, escolha 3;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Dizer o número de medições de dados feitas nos testes.
+\end_layout
+
+\begin_layout Enumerate
+Informar os dados do reservatório pedidos.
+\end_layout
+
+\begin_layout Enumerate
+Obter o volume original de gás ou óleo.
+\end_layout
+
+\begin_layout Enumerate
+Gerar gráfico pelo Gnuplot.
+\end_layout
+
+\end_body
+\end_document

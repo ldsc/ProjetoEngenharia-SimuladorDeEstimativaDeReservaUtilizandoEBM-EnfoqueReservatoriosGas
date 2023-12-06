@@ -1,0 +1,56 @@
+Tipo de Fluido:
+(1)Gas
+(2)Oleo
+2
+
+Tipo de mecanismo:
+(1)Gas em solucao
+(2)Capa de Gas
+(3)Sob Influxo de Agua
+2
+
+Numero de medicoes:4
+Pressao Inicial (kgf/cm2): 234.18
+Boi (m3/m3 std): 1.2511
+Saturacao Inicial de Agua: 0.20
+Compressibilidade da agua ((kgf/cm2)^-1): 4.27e-5
+Compressibilidade da formacao ((kgf/cm2)^-1): 12.23e-5        
+Pressao (1)(kgf/cm2): 221.47
+Oleo Produzido (1)(m3 std): 0.5239e6
+Bo (1)(m3/m3 std): 1.2353
+Pressao (2)(kgf/cm2): 210.92
+Oleo Produzido (2)(m3 std): 0.9385e6
+Bo (2)(m3/m3 std): 1.2222
+Pressao (3)(kgf/cm2): 200.37
+Oleo Produzido (3)(m3 std): 1.407e6
+Bo (3)(m3/m3 std): 1.2122
+Pressao (4)(kgf/cm2): 189.83
+Oleo Produzido (4)(m3 std): 1.8288e6
+Bo (4)(m3/m3 std): 1.2022
+Bgi (m3/m3 std): 0.00488
+Rsi (m3/m3 std): 90.83
+.
+
+Rp (1)(m3 std/m3 std): 187.01
+Rs (1)(m3/m3 std): 84.96
+Bg (1)(m3/m3 std): 0.00517
+Rp (2)(m3 std/m3 std): 188.79
+Rs (2)(m3/m3 std): 80.15
+Bg (2)(m3/m3 std): 0.00539
+Rp (3)(m3 std/m3 std): 206.60
+Rs (3)(m3/m3 std): 75.70
+Bg (3)(m3/m3 std): 0.00567
+Rp (4)(m3 std/m3 std): 219.96
+Rs (4)(m3/m3 std): 71.42
+Bg (4)(m3/m3 std): 0.00601
+
+Eg/Eo(adm)                              F/Eo(m3 std)
+5.11058                         6.34856e+07
+4.56129                         5.91865e+07
+4.31962                         5.86482e+07
+4.27578                         5.65456e+07
+
+
+Regressao Linear
+N (m3 std) = a = 2.59602e+07
+

@@ -1,0 +1,578 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Capa
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE
+\begin_inset Newline newline
+\end_inset
+
+LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+O título deve ser o mais claro possível, não deixando dúvidas sobre o assunto
+ em questão.
+ O uso de vírgula ou dois pontos pode deixar o título com mais impacto.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+PROJETO DE ENGENHARIA
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+SIMULADOR DE ESTIMATIVA DE RESERVA DE RESERVATÓRIO UTILIZANDO EBM,
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+COM ENFOQUE NOS RESERVATÓRIOS DE GÁS
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+LEONARDO MESQUITA CAETANO - 2012 - V1
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+THIAGO PESSANHA DE MACEDO - 2012 - V1
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+JALILE BARTOLE PEREIRA - 2014 - V2
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+THAÍSA DE CASTRO ALEIXO - 2014 - V2
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+IGOR BENJAMIN DE SOUZA - 2023 - V3
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+MATHEUS RODRIGUES NASCMENTO - 2023 - V3
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+MACAÉ - RJ
+\begin_inset Newline newline
+\end_inset
+
+NOVEMBRO - 2023
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Glossário
+\end_layout
+
+\begin_layout Itemize
+ANP: Agência Nacional do Petróleo.
+\end_layout
+
+\begin_layout Itemize
+EBM: Equação de Balanço de Materiais.
+\end_layout
+
+\begin_layout Itemize
+PVT: Análise de Pressão, Volume e Temperatura.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introdução
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+rhead{}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No presente trabalho desenvolve-se um projeto de engenharia, cujo código
+ é desenvolvido usando-se a linguagem C++
+\series bold
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+A linguagem utilizada é uma linguagem orientada a objeto, que utiliza o
+ conceito de classes, o que facilita na criação de programas complexos,
+ como os de engenharia.
+ É uma linguagem de alto nível, fortemente tipada.
+ É amplamente utilizada para montagem de sistemas operacionais como Windows,
+ GNU/Linux, e programas como o Lyx, Office e OpenOffice.
+\end_layout
+
+\end_inset
+
+
+\series default
+ e paradigma de orientação a objetos, que tem como principal objetivo implementa
+r as equações de balanço de materias vistas na disciplina de Engenharia
+ de Reservatório para os diferentes mecanismo de produção de petróleo.
+ Dessa forma, a principal finalidade do programa é fornecer uma estimativa
+ do volume original de óleo ou gás do reservatório.
+
+\series bold
+ Além dos mecanismos de produção convencionais, o simulador também é capaz
+ de modelar a injeção de água e gás ou uma mistura de fluidos.
+
+\series default
+ Também é dado um enfoque em reservatórios de gás e gás condensado, incluindo,
+ por exemplo, o seu comportamento quando há influxo de água, e alguns modelos
+ para o cálculo deste influxo.
+
+\series bold
+ 
+\end_layout
+
+\begin_layout Section
+Escopo do problema
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na indústria do petróleo é fundamental ter uma estimativa da reserva de
+ óleo ou gás de um campo.
+ Além disso, é importante ter uma previsão do comportamento do reservatório
+ antes de começar a produzir e durante toda a sua vida produtiva.
+ Tais estimativas são importantes por diversos fatores, tais como: Estudo
+ de Viabilidade Técnica e Economica (EVTE), declaração de comercialidade
+ para a ANP, tomada de decisões estratégicas (investir ou abandonar um campo).
+\end_layout
+
+\begin_layout Standard
+Para fazer as estimativas de uma acumulação petrolífera se faz uso da Equação
+ de Balanço de Materiais (EBM), que é um balanço de massas dos fluidos existente
+s no interior dos poros das rochas-reservatório.
+ Suas principais utilizações práticas são a determinação do volume original
+ de óleo, a determinação do volume original de gás e a previsão do comportamento
+ do reservatório.
+\end_layout
+
+\begin_layout Section
+Objetivos - V1
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos da primeira versão do trabalho são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desenvolver uma solução para determinar o volume original de fluido no reservató
+rio.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Selecionar o tipo de fluido presente no reservatório.
+\end_layout
+
+\begin_layout Itemize
+Selecionar o mecanismo de produção.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Objetivos - V2
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos-v2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste trabalho são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desenvolver uma solução para determinar o volume original de fluido (principalme
+nte gás) no reservatório.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Selecionar o tipo de fluido presente no reservatório (gás).
+\end_layout
+
+\begin_layout Itemize
+Selecionar o mecanismo de produção.
+\end_layout
+
+\begin_layout Itemize
+Quando houver influxo de água, escolher o modelo que será utilizado para
+ o cálculo deste influxo.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Objetivos - V3
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos-v3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Objetivo geral:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Desenvolver uma solução para determinar o volume original de fluido no reservató
+rio, incluindo reservatórios com injeção de fluidos.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Selecionar o tipo de fluido presente no reservatório (gás, óleo, água, ou
+ misturas).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Selecionar o mecanismo de produção (gas lift, water flooding, CO2 injection).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Selecionar o modelo de injeção de fluidos (água, gás, CO2, ou misturas).
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+As EBM foram implementadas no segundo semestre de 2012 pelos alunos Leonardo
+ Mesquita Caetano e Thiago Pessanha de Macedo.
+ No segundo semestre de 2014, Jalile Bartole Pereira e Thaísa de Castro
+ Aleixo fizeram a ampliação deste código, adicionando novas premissas para
+ a determinação do volume original de gás: considerando-se reservatórios
+ de gás condensado (retrógrado e não retrógrado), analisando-se a influência
+ dos aquíferos e detalhando o comportamento de alguns modelos de influxo.
+ 
+\series bold
+Nesta versão do projeto, o código foi estendido para inclur a modelagem
+ da injeção de fluidos ao reservatório, aumentando a gama de cenários de
+ simulação da produção para determinar o volume original de óleo e gás em
+ reservatórios que estão sendo submetidos a injeção de água e gás, CO2 e
+ água, CO2 e gás, água e gás, e água, CO2 e gás.
+\end_layout
+
+\end_body
+\end_document
