@@ -300,6 +300,16 @@ Dicionário de classes
 \end_layout
 
 \begin_layout Itemize
+Classe CRegLin: representa a classe que geral do simulador.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+método CSimulador: representa o simulador.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 Classe CRegLin: representa a classe que fará a regressão linear dos pontos
  gerados pelas classe hedeiras da classe CRes.
 \begin_inset Separator latexpar
@@ -820,21 +830,21 @@ Classe CInjAgua: representa os conceitos de injeção de água no reservatório.
 \begin_layout Itemize
 
 \series bold
-atributo q: Taxa de injeção de água (m³/dia).
+atributo q (m³/dia): Taxa de injeção de água.
  
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo cw: Compressibilidade da água [(kgf/cm²)^-1].
+atributo cw [(kgf/cm²)^-1]: Compressibilidade da água.
  
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo pwi: Pressão inicial da água na injeção (kgf/cm²).
+atributo pwi (kgf/cm²): Pressão inicial da água na injeção.
 \end_layout
 
 \begin_layout Itemize
@@ -854,21 +864,21 @@ Classe CInjGas: representa os conceitos de injeção de gás no reservatório.
 \begin_layout Itemize
 
 \series bold
-atributo - q: Taxa de injeção de gás (m³/dia).
- - 
+atributo q (m³/dia): Taxa de injeção de gás .
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo cg: Compressibilidade do gás [(kgf/cm²)^-1].
- - 
+atributo cg [(kgf/cm²)^-1]: Compressibilidade do gás.
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo pwgi: Pressão inicial do gás na injeção (kgf/cm²).
+atributo pwgi (kgf/cm²): Pressão inicial do gás na injeção.
  
 \end_layout
 
@@ -890,35 +900,35 @@ rio.
 \begin_layout Itemize
 
 \series bold
-atributo q: Taxa de injeção de polímero (m³/dia).
- - 
+atributo q (m³/dia): Taxa de injeção de polímero.
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo muw: Viscosidade da água (cP).
- - 
+atributo muw (cP): Viscosidade da água.
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo mug: Viscosidade do gás (cP).
- - 
+atributo mug (cP): Viscosidade do gás.
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo cw: Compressibilidade da água [(kgf/cm²)^-1].
- - 
+atributo cw [(kgf/cm²)^-1]: Compressibilidade da água.
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo cpwi: Pressão inicial do polímero na injeção (kgf/cm²).
+atributo cpwi (kgf/cm²): Pressão inicial do polímero na injeção .
  
 \end_layout
 
@@ -941,42 +951,37 @@ Classe CInjSurfactante: representa os conceitos de injeção de surfactante
 \begin_layout Itemize
 
 \series bold
-atributo q: Taxa de injeção de surfactante (m³/dia).
- - 
+atributo q (m³/dia): Taxa de injeção de surfactante.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo muw: Viscosidade da água (cP).
- - 
+atributo muw (cP): Viscosidade da água.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo mug: Viscosidade do gás (cP).
- - 
+atributo mug (cP): Viscosidade do gás.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo cw: Compressibilidade da água [(kgf/cm²)^-1].
- -
+atributo cw [(kgf/cm²)^-1]: Compressibilidade da água.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo cs: Compressibilidade do surfactante [(kgf/cm²)^-1].
- - 
+atributo cs [(kgf/cm²)^-1]: Compressibilidade do surfactante.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo cpwi: Pressão inicial do surfactante na injeção (kgf/cm²).
+atributo cpwi (kgf/cm²): Pressão inicial do surfactante na injeção.
  
 \end_layout
 
@@ -998,42 +1003,38 @@ Classe CInjVapor: representa os conceitos de injeção de vapor no reservatório
 \begin_layout Itemize
 
 \series bold
-atributo q: Taxa de injeção de vapor (m³/dia).
- - 
+atributo q (m³/dia): Taxa de injeção de vapor.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo muw: Viscosidade da água (cP).
- - 
+atributo muw (cP): Viscosidade da água.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo mug: Viscosidade do gás (cP).
- - 
+atributo mug (cP): Viscosidade do gás.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo cw: Compressibilidade da água [(kgf/cm²)^-1].
- - 
+atributo cw [(kgf/cm²)^-1]: Compressibilidade da água.
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo cv: Compressibilidade do vapor [(kgf/cm²)^-1].
- - 
+atributo cv [(kgf/cm²)^-1]: Compressibilidade do vapor.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo cpwi: Pressão inicial do vapor na injeção (kgf/cm²).
+atributo cpwi (kgf/cm²): Pressão inicial do vapor na injeção.
  
 \end_layout
 
@@ -1056,29 +1057,26 @@ io.
 \begin_layout Itemize
 
 \series bold
-atributo q: Taxa de injeção de gás lift (m³/dia).
+atributo q (m³/dia): Taxa de injeção de gás lift.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo cg [(kgf/cm²)^-1]: Compressibilidade do gás.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atributo pwgi (kgf/cm²): Pressão inicial do gás lift na injeção.
  - 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-atributo cg: Compressibilidade do gás [(kgf/cm²)^-1].
- - 
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-atributo pwgi: Pressão inicial do gás lift na injeção (kgf/cm²).
- - 
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-atributo depth: Profundidade do poço (m).
- 
+atributo depth (m).: Profundidade do poço 
 \end_layout
 
 \begin_layout Itemize
@@ -1355,7 +1353,7 @@ reference "subsec:Diagrama-de-Comunicação"
 
 \end_inset
 
- o diagrama de comunicação mostrando a sequência de blablabla.
+ o diagrama de comunicação mostrando a sequência de simulação.
  No diagrama de comunicação o foco é a interação e a troca de mensagens
  e dados entre os objetos.
  
@@ -1512,7 +1510,7 @@ reference "cap:Diagrama-de-atividades"
 
  o diagrama de atividades correspondente a uma atividade específica do diagrama
  de máguina de estado.
- Observe que....
+ 
 \end_layout
 
 \begin_layout Standard

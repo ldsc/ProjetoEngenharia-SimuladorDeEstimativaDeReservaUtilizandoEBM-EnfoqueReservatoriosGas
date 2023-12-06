@@ -488,8 +488,8 @@ reference "cap:Diagrama_caso_de _uso_1_Reg_Lin"
 
 \end_inset
 
- mostra o usuário utilizando o SImRes para análise de tendências e padrões
- dos dados históricos.
+ mostra o usuário utilizando o Simulaor de reservatório para análise de
+ tendências e padrões dos dados históricos.
 \end_layout
 
 \begin_layout Standard
@@ -1765,10 +1765,6 @@ name "cap:Diagrama_de_Caso_de_Uso_Gerar_Grafico"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Description
 
 \end_layout
 

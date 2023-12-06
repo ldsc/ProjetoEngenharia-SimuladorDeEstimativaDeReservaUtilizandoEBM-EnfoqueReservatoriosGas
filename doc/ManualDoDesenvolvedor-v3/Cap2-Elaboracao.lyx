@@ -347,11 +347,9 @@ Para reservatórios de gás o programa utiliza a equação de balanço de materi
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
-\frac{p}{Z}=\frac{1}{V_{i}-W_{e}-W_{i}+E_{f,i}}\left(\frac{p_{i}V_{i}}{Z_{i}}-\frac{Tp_{0}}{T_{0}}(G_{p}+G_{i})\right),
+\frac{p}{Z}=\frac{1}{V_{i}-W_{e}}\left(\frac{p_{i}V_{i}}{Z_{i}}-\frac{Tp_{0}}{T_{0}}G_{p}\right)
 \end{equation}
 
 \end_inset
@@ -392,24 +390,10 @@ Onde:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $E_{f,i}$
-\end_inset
-
-[m³] = efeito da expansão do fluido injetado 
-\end_layout
-
-\begin_layout Itemize
 \begin_inset Formula $G_{p}$
 \end_inset
 
  [m³ std]= gás produzido
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $W_{inj}$
-\end_inset
-
- [m³ std]= volume de fluido injetado 
 \end_layout
 
 \begin_layout Itemize
@@ -429,94 +413,6 @@ Onde:
 \end_layout
 
 \begin_layout Standard
-O volume de fluido injetado 
-\begin_inset Formula $W_{inj}$
-\end_inset
-
- [m³ std] pode ser calculado a partir da equação:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-W_{inj}=W_{inj,a}+W_{inj,g},
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Onde:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $W_{inj,a}$
-\end_inset
-
- [m³ std] = volume de água injetada 
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $W_{inj,g}$
-\end_inset
-
- [m³ std] = volume de gás injetado 
-\end_layout
-
-\begin_layout Standard
-O feito da expansão do fluido injetado 
-\begin_inset Formula $E_{f,i}$
-\end_inset
-
-[m³] pode ser calculado a partir da equação:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-E_{f,i}=\frac{B_{winj}-B_{winj,i}}{B_{winj,i}}W_{inj,a}+\frac{(B_{ginj}-B_{ginj,i})}{B_{ginj,i}}W_{inj,g},
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Onde:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $B_{winj}$
-\end_inset
-
- [m³/m³ std] = fator de volume de formação da água injetada no reservatório
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $B_{winj,i}$
-\end_inset
-
- [m³/m³ std] = fator de volume de formação da água inicial no reservatório
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $B_{ginj}$
-\end_inset
-
- [m³/m³ std] = fator de volume de formação do gás injetado no reservatório
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $B_{ginj,i}$
-\end_inset
-
- [m³/m³ std] = fator de volume de formação do gás inicial no reservatório
-\end_layout
-
-\begin_layout Standard
 
 \series bold
 A equação de balanço de materiais utilizada para reservatório de óleo pode
@@ -533,7 +429,7 @@ A equação de balanço de materiais utilizada para reservatório de óleo pode
 \align center
 \begin_inset Formula 
 \begin{equation}
-N=\frac{N_{p}\left[B_{o}+(R_{p}-R_{s})B_{g}\right]-W_{e}-W_{inj}}{B_{o}-B_{oi}+(R_{si}-R_{s})B_{g}+mB_{oi}\left(\frac{B_{g}}{B_{gi}}-1\right)+\left(1+m\right)B_{oi}\left(\frac{c_{w}S_{wi}+c_{f}}{1-S_{wi}}\right)\Delta p},
+N=\frac{N_{p}\left[B_{o}+\left(R_{p}-R_{s}\right)B_{g}\right]-W_{e}}{B_{o}-B_{oi}+(R_{si}-R_{s})B_{g}+mB_{oi}\left(\frac{B_{g}}{B_{gi}}-1\right)+\left(1+m\right)B_{oi}\left(\frac{c_{w}S_{wi}+c_{f}}{1-S_{wi}}\right)\triangle p}
 \end{equation}
 
 \end_inset
@@ -592,13 +488,6 @@ Onde:
 \end_inset
 
  [m³] = influxo de água acumulado
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $W_{inj}$
-\end_inset
-
- [m³ std]= volume de fluido injetado 
 \end_layout
 
 \begin_layout Itemize
@@ -665,7 +554,7 @@ F=N(E_{o}+mE_{g}+E_{f,w})+W_{e},
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -679,7 +568,7 @@ onde:
 \series bold
 \begin_inset Formula 
 \begin{equation}
-F=N_{p}[B_{o}+(R_{p}-R_{s})B_{g}]+W_{p}B_{w}-W_{inj}B_{winj}-G_{inj}B_{ginj},
+F=N_{p}[B_{o}+(R_{p}-R_{s})B_{g}]+W_{p}B_{w}-(V_{inj}​B_{vinj}​+S_{inj}​B_{sinj}​+P_{inj}​B_{pinj​}+G_{inj​}B_{ginj​}+W_{inj​}B_{winj​}+GL_{inj}​Bgl_{inj},
 \end{equation}
 
 \end_inset
@@ -697,7 +586,7 @@ E_{o}=B_{o}+(R_{si}-R_{s})B_{g}-B_{oi},
 
 \end_inset
 
-representa a expansão dos hidrocarbonetos na zona de óleo;
+representa a expansão hidrocarbonetos na zona de ́oleo:;
 \end_layout
 
 \begin_layout Standard
@@ -710,7 +599,7 @@ E_{g}=B_{oi}\frac{(B_{g}-B_{gi})}{B_{gi}},
 
 \end_inset
 
-representa a expansão dos hidrocarbonetos na capa de gás;
+representa a expansão dos hidrocarbonetos na capa de gás:;
 \end_layout
 
 \begin_layout Standard
@@ -799,7 +688,7 @@ Reservatórios de gás seco são aqueles em que o fluido se encontra no estado
 \begin_layout Standard
 
 \series bold
-Para um reservatório volumétrico de gás seco, que produz somente por depleção,
+Para um reservtório volumétrico de gás seco, que produz somente por depleção,
  ou seja, por expansão da massa de gás existente no meio poroso, não havendo,
  portanto, influxo de água proveniente de aquífero, e desconsidera-se as
  variações de volume poroso e água conata (por serem desprezíveis comparadas
@@ -825,33 +714,6 @@ p/Z=p_{i}/Z_{i}-p_{i}G_{p}/(Z_{i}G).
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Para adicionar a injeção de fluidos à equação, basta substituir o volume
- produzido pela soma do volume produzido e do volume injetado.
- No caso de um reservatório volumétrico de gás seco, o volume produzido
- é dado pela equação:
-\end_layout
-
-\begin_layout Standard
-G_{p}=V_{i}(p_{i}/p-1)
-\end_layout
-
-\begin_layout Standard
-O volume injetado é dado pela equação:
-\end_layout
-
-\begin_layout Standard
-G_{inj}=W_{inj}B_{ginj}
-\end_layout
-
-\begin_layout Standard
-Substituindo essas equações na equação (3.1), obtemos a equação modificada:
-\end_layout
-
-\begin_layout Standard
-p/Z=p_{i}/Z_{i}-p_{i}G_{p}/(Z_{i}G)+(G_{inj}/(B_{o}B_{ginj})) 
 \end_layout
 
 \begin_layout Standard
@@ -1455,10 +1317,6 @@ name "fig:Diagrama-de-Pacotes"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Description
 
 \end_layout
 
