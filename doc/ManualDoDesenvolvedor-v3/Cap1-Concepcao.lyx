@@ -396,8 +396,8 @@ Apresenta-se nesta seção a especificação detalhada do software de Simulaçã
 \end_layout
 
 \begin_layout Standard
-O software tem como objetivo principal realizar simulações determinar os
- volumes originais de gás e óleo, vai salvar os dados analisados do histórico
+O software tem como objetivo principal realizar simulações para determinar
+ os volumes originais de gás e óleo, vai salvar os dados analisados do histórico
  de produção e gerar um gráfico com o auxílio do programa externo Gnuplot.,
  considerando diversos mecanismos de produção e métodos de injeção.
 \end_layout
