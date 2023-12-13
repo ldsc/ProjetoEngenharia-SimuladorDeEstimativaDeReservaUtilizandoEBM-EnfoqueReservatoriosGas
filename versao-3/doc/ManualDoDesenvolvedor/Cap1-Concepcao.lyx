@@ -406,7 +406,7 @@ O software tem como objetivo principal realizar simulações para determinar
 O diagrama especificção do software da Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Diagrama-espec-software"
+reference "cap:Diagrama-especificacao-software"
 
 \end_inset
 
@@ -422,7 +422,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_espe_software.jpeg
+	filename imagens/DiagramaDeEspecificacaoSoftware.jpeg
 	width 100text%
 
 \end_inset
@@ -437,7 +437,7 @@ status open
 Diagrama de especificação do Software
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Diagrama-espec-software"
+name "cap:Diagrama-especificacao-software"
 
 \end_inset
 
@@ -484,7 +484,7 @@ A seguir, são apresentados casos de uso específicos do software, detalhando
 O diagrama de regressão linear da Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Diagrama_caso_de _uso_1_Reg_Lin"
+reference "cap:Diagrama-especificacao-software:Regressao-Linear"
 
 \end_inset
 
@@ -501,7 +501,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_caso_de _uso_1_Reg_Lin.jpeg
+	filename imagens/DiagramaDeEspecificacaoSoftware-RegLin.jpeg
 	width 100text%
 
 \end_inset
@@ -516,7 +516,7 @@ status open
 Diagrama de Regressão Linear
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Diagrama_caso_de _uso_1_Reg_Lin"
+name "cap:Diagrama-especificacao-software:Regressao-Linear"
 
 \end_inset
 
@@ -533,7 +533,7 @@ name "cap:Diagrama_caso_de _uso_1_Reg_Lin"
 O diagrama de Modelagem de Reservatório de Gás da Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Diagrama_de_Caso_de_Us_ 2_Model_Reserv_de_Gas"
+reference "cap:Diagrama-especificacao-software:Modelo-Reservatorio-Gas"
 
 \end_inset
 
@@ -550,7 +550,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_Caso_de_Us_ 2_Model_Reserv_de_Gas.jpeg
+	filename imagens/diagramas/DiagramaDeEspecificacaoSoftware-ModelReservGas.dia
 	width 100text%
 
 \end_inset
@@ -565,7 +565,7 @@ status open
 Diagrama de Modelagem de Reservatório de Gás
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Diagrama_de_Caso_de_Us_ 2_Model_Reserv_de_Gas"
+name "cap:Diagrama-especificacao-software:Modelo-Reservatorio-Gas"
 
 \end_inset
 
@@ -582,7 +582,7 @@ name "cap:Diagrama_de_Caso_de_Us_ 2_Model_Reserv_de_Gas"
 O diagrama de Modelagem de Injeção de Fluido da Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Diagrama_de_Caso de Uso_3_Injeção."
+reference "cap:Diagrama-especificacao-software:Injecao"
 
 \end_inset
 
@@ -599,7 +599,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_Caso de Uso_3_Injeção.jpeg
+	filename imagens/diagramas/DiagramaDeEspecificacaoSoftware-Injecao.dia
 	width 100text%
 
 \end_inset
@@ -614,7 +614,7 @@ status open
 Diagrama de Modelagem de Injeção de Fluido
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Diagrama_de_Caso de Uso_3_Injeção."
+name "cap:Diagrama-especificacao-software:Injecao"
 
 \end_inset
 
@@ -1431,7 +1431,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_Caso_de_Uso_Geral.jpeg
+	filename imagens/DiagramaDeCasoUso-Geral.jpeg
 	width 100text%
 
 \end_inset
@@ -1503,7 +1503,7 @@ reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
  é detalhado na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Diagrama-de-caso-de-uso-especifico:Escolher_Mecanismo_de_Produção"
+reference "cap:Diagrama-de-caso-de-uso-especifico:Escolher-Mecanismo-de-Producao"
 
 \end_inset
 
@@ -1523,7 +1523,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_caso_de_uso_especifico_Escolher_Mecanismo_de_Produção.jpeg
+	filename imagens/DiagramaDeCasoDeUso-Especifico-MecanismosDeProducao.jpeg
 	width 100text%
 
 \end_inset
@@ -1538,7 +1538,7 @@ status open
 Diagrama de caso de uso específico – Escolha do Mecanismo de Produção
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Diagrama-de-caso-de-uso-especifico:Escolher_Mecanismo_de_Produção"
+name "cap:Diagrama-de-caso-de-uso-especifico:Escolher-Mecanismo-de-Producao"
 
 \end_inset
 
@@ -1573,7 +1573,7 @@ reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
  é detalhado na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Diagrama_de_Caso_de_Uso_específico_Método_de_Injeção."
+reference "cap:Diagrama-de-caso-de-uso-especifico:Escolher-Metodo-de-Injecao"
 
 \end_inset
 
@@ -1593,7 +1593,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_Caso_de_Uso_específico_Método_de_Injeção.jpeg
+	filename imagens/DiagramaDeCasoDeUso-Especifico-MetodoDeInjecao.jpeg
 	width 100text%
 
 \end_inset
@@ -1608,7 +1608,7 @@ status open
 Diagrama de caso de uso específico – Selecionar Método de Injeção
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Diagrama_de_Caso_de_Uso_específico_Método_de_Injeção."
+name "cap:Diagrama-de-caso-de-uso-especifico:Escolher-Metodo-de-Injecao"
 
 \end_inset
 
@@ -1643,7 +1643,7 @@ reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
  é detalhado na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Diagrama_de_Caso_de_Uso_específico_Salvar_Dados"
+reference "cap:Diagrama-de-caso-de-uso-especifico:Salvar-Dados"
 
 \end_inset
 
@@ -1663,7 +1663,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_Caso_de_Uso_especifico_Salvar_relatório.jpeg
+	filename imagens/DiagramaDeCasoDeUso-Especifico-SalvarRelatorio.jpeg
 	width 70text%
 	height 50text%
 
@@ -1679,7 +1679,7 @@ status open
 Diagrama de caso de uso específico – Salvar Relatório
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Diagrama_de_Caso_de_Uso_específico_Salvar_Dados"
+name "cap:Diagrama-de-caso-de-uso-especifico:Salvar-Dados"
 
 \end_inset
 
@@ -1714,7 +1714,7 @@ reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
  é detalhado na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Diagrama_de_Caso_de_Uso_Gerar_Grafico"
+reference "cap:Diagrama-de-caso-de-uso-especifico:Gerar-Grafico"
 
 \end_inset
 
@@ -1736,7 +1736,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_Caso_de_Uso_Gerar_Grafico.jpeg
+	filename imagens/DiagramaDeCasoDeUso-Especifico-GerarGrafico.jpeg
 	width 100text%
 
 \end_inset
@@ -1751,7 +1751,7 @@ status open
 Diagrama de caso de uso específico – Gerar Gráfico
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Diagrama_de_Caso_de_Uso_Gerar_Grafico"
+name "cap:Diagrama-de-caso-de-uso-especifico:Gerar-Grafico"
 
 \end_inset
 

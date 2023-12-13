@@ -236,7 +236,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_Classes.jpeg
+	filename imagens/DiagramaDeClasses.jpeg
 	width 100text%
 
 \end_inset
@@ -503,11 +503,7 @@ método CResGasPres: representa o construtor da classe.
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
-C
-\series default
-lasse CResGasSecoInf: representa os conceitos fundamentais do mecanismo
+Classe CResGasSecoInf: representa os conceitos fundamentais do mecanismo
  de gás com influxo de água.
 \begin_inset Separator latexpar
 \end_inset
@@ -820,128 +816,92 @@ método COilInf: representa o construtor da classe.
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Classe CInjAgua: representa os conceitos de injeção de água no reservatório.
  
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 atributo q (m³/dia): Taxa de injeção de água.
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo cw [(kgf/cm²)^-1]: Compressibilidade da água.
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo pwi (kgf/cm²): Pressão inicial da água na injeção.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo método CInjAgua: Construtor da classe CInjAgua
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Classe CInjGas: representa os conceitos de injeção de gás no reservatório.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 atributo q (m³/dia): Taxa de injeção de gás .
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo cg [(kgf/cm²)^-1]: Compressibilidade do gás.
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo pwgi (kgf/cm²): Pressão inicial do gás na injeção.
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 método CInjGas: Construtor da classe CInjGas
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Classe CInjPolimero: representa os conceitos de injeção de polímero no reservató
 rio.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 atributo q (m³/dia): Taxa de injeção de polímero.
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo muw (cP): Viscosidade da água.
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo mug (cP): Viscosidade do gás.
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo cw [(kgf/cm²)^-1]: Compressibilidade da água.
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo cpwi (kgf/cm²): Pressão inicial do polímero na injeção .
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 método CInjPolimero: Construtor da classe CInjPolimero
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Classe CInjSurfactante: representa os conceitos de injeção de surfactante
  no reservatório.
  
@@ -949,105 +909,73 @@ Classe CInjSurfactante: representa os conceitos de injeção de surfactante
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 atributo q (m³/dia): Taxa de injeção de surfactante.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo muw (cP): Viscosidade da água.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo mug (cP): Viscosidade do gás.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo cw [(kgf/cm²)^-1]: Compressibilidade da água.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo cs [(kgf/cm²)^-1]: Compressibilidade do surfactante.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo cpwi (kgf/cm²): Pressão inicial do surfactante na injeção.
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 método CInjSurfactante: Construtor da classe CInjSurfactante.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Classe CInjVapor: representa os conceitos de injeção de vapor no reservatório.
  Construtor da classe CInjVapor.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 atributo q (m³/dia): Taxa de injeção de vapor.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo muw (cP): Viscosidade da água.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo mug (cP): Viscosidade do gás.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo cw [(kgf/cm²)^-1]: Compressibilidade da água.
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo cv [(kgf/cm²)^-1]: Compressibilidade do vapor.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo cpwi (kgf/cm²): Pressão inicial do vapor na injeção.
  
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 método CInjVapor: Construtor da classe CInjVapor.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Classe CInjGasLift: representa os conceitos de injeção de gás lift no reservatór
 io.
  
@@ -1055,33 +983,23 @@ io.
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 atributo q (m³/dia): Taxa de injeção de gás lift.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo cg [(kgf/cm²)^-1]: Compressibilidade do gás.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo pwgi (kgf/cm²): Pressão inicial do gás lift na injeção.
  - 
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 atributo depth (m).: Profundidade do poço 
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 método CInjGasLift: Construtor da classe CInjGasLift.
 \end_layout
 
@@ -1175,7 +1093,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_Sequencia_Geral.jpeg
+	filename imagens/DiagramaDeSequencia-Geral.jpeg
 	width 100text%
 
 \end_inset
@@ -1265,7 +1183,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_Sequencia_Especifico.jpeg
+	filename imagens/DiagramaDeSequencia-Especifico.jpeg
 	width 100text%
 
 \end_inset
@@ -1369,7 +1287,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_Comunicação.jpeg
+	filename imagens/DiagramaDeComunicacao.jpeg
 	width 100text%
 
 \end_inset
@@ -1384,7 +1302,7 @@ status open
 Diagrama de comunicação
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:DiagramaDeComunicacao"
+name "cap:Diagrama-de-comunicacao"
 
 \end_inset
 
@@ -1457,7 +1375,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_Maquina_de_Estado.jpeg
+	filename imagens/DiagramaDeEstado-ClasseSimulador.jpeg
 	width 100text%
 
 \end_inset
@@ -1523,7 +1441,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_Atividades.jpeg
+	filename imagens/DiagramaDeAtividade-ClasseSimulador-MetodoVolume.jpeg
 	width 100text%
 
 \end_inset

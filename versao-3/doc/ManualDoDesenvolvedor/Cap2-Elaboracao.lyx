@@ -341,8 +341,6 @@ te existente e o produzido, ambos medidos em condição-padrão.
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Para reservatórios de gás o programa utiliza a equação de balanço de materiais:
 \end_layout
 
@@ -413,12 +411,8 @@ Onde:
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 A equação de balanço de materiais utilizada para reservatório de óleo pode
  ser escrita como:
-\series default
-
 \begin_inset Separator latexpar
 \end_inset
 
@@ -545,8 +539,6 @@ te:
 
 \begin_layout Standard
 \align center
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 F=N(E_{o}+mE_{g}+E_{f,w})+W_{e},
@@ -558,14 +550,10 @@ F=N(E_{o}+mE_{g}+E_{f,w})+W_{e},
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 onde:
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 F=N_{p}[B_{o}+(R_{p}-R_{s})B_{g}]+W_{p}B_{w}-(V_{inj}​B_{vinj}​+S_{inj}​B_{sinj}​+P_{inj}​B_{pinj​}+G_{inj​}B_{ginj​}+W_{inj​}B_{winj​}+GL_{inj}​Bgl_{inj},
@@ -577,8 +565,6 @@ representa o volume de fluidos injetados e produzidos;
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 E_{o}=B_{o}+(R_{si}-R_{s})B_{g}-B_{oi},
@@ -590,8 +576,6 @@ representa a expansão hidrocarbonetos na zona de ́oleo:;
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 E_{g}=B_{oi}\frac{(B_{g}-B_{gi})}{B_{gi}},
@@ -603,8 +587,6 @@ representa a expansão dos hidrocarbonetos na capa de gás:;
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 E_{f,w}=(1+m)B_{oi}((c_{w}S_{wi}+c_{f})/(1-S_{wi}))(p_{i}-p),
@@ -616,8 +598,6 @@ representa os efeitos da expansão da água conata e redução do volume poroso;
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 m=GB_{gi}/NB_{oi}.
@@ -629,8 +609,6 @@ m=GB_{gi}/NB_{oi}.
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 A partir dessa equação geral o programa determina o volume de óleo original
  do reservatório para cada tipo de mecanismo associado analisando suas caracterí
 sticas e considerações.
@@ -641,14 +619,10 @@ Descrição dos mecanismos de produção para reservatório de gás
 \end_layout
 
 \begin_layout Quotation
-
-\series bold
 Os mecanismos de produção para reservatórios de gás são:
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Depleção: quando o reservatório é colocado para produzir, há um diferencial
  de pressão entre o fundo do poço e o interior do reservatório, o que causa
  o início da produção.
@@ -658,8 +632,6 @@ Depleção: quando o reservatório é colocado para produzir, há um diferencial
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Influxo de água: quando há um aquífero contíguo ao reservatório de gás.
  À medida que ocorre a retirada de gás através da produção, há um influxo
  de água para o interior do reservatório, que empurra o gás ainda existente
@@ -667,27 +639,19 @@ Influxo de água: quando há um aquífero contíguo ao reservatório de gás.
 \end_layout
 
 \begin_layout Quotation
-
-\series bold
 Os reservatórios de gás a serem considerados serão:
 \end_layout
 
 \begin_layout Subsection
-
-\series bold
 Reservatórios de gás seco
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Reservatórios de gás seco são aqueles em que o fluido se encontra no estado
  gasoso tanto em condições de reservatório, quanto de superfície.
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Para um reservtório volumétrico de gás seco, que produz somente por depleção,
  ou seja, por expansão da massa de gás existente no meio poroso, não havendo,
  portanto, influxo de água proveniente de aquífero, e desconsidera-se as
@@ -696,8 +660,6 @@ Para um reservtório volumétrico de gás seco, que produz somente por depleçã
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 p/Z=p_{i}/Z_{i}-Tp_{0}G_{p}/(V_{i}T_{0}),
@@ -717,8 +679,6 @@ p/Z=p_{i}/Z_{i}-p_{i}G_{p}/(Z_{i}G).
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Para um reservatório de gás seco anormalmente pressurizado, que apresenta
  grandes gradientes de pressão, a rocha é inconsolidada e altamente compressível
 , logo não podemos desprezar as variações do volume poroso e de água conata.
@@ -735,8 +695,6 @@ Para um reservatório de gás seco anormalmente pressurizado, que apresenta
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Definindo a compressibilidade efetiva do sistema água formação 
 \begin_inset Formula $(c_{ewf})$
 \end_inset
@@ -745,8 +703,6 @@ Definindo a compressibilidade efetiva do sistema água formação
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 c_{ewf}=\frac{c_{w}S_{wi}+c_{f}}{1-S_{wi}},
@@ -758,8 +714,6 @@ simplificamos a equação (3.11) em:
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 \frac{p}{Z}(1-c_{ewf}\Delta p)=\frac{p_{i}}{Z_{i}}-\frac{p_{i}}{Z_{i}G}G_{p}.
@@ -771,8 +725,6 @@ simplificamos a equação (3.11) em:
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Reservatórios de gás seco sob influxo de água, que são aqueles em que à
  medida em que ocorre a retirada de massa através da produção dos poços,
  há influxo de água para o seu interior proveniente de um aquífero contíguo
@@ -789,21 +741,15 @@ V=V_{i}-W_{e}.
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Para determinação do influxo de água são utilizados dois modelos.
  No programa o usuário irá definir o modelo usado: Pot Aquifer ou Schilthuis.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Modelo Pot Aquifer
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Para aquíferos de tamanho próximo ao do reservatório.
  Em reservatórios com mecanismo de influxo de água, a queda de pressão devida
  à produção de fluidos causa uma expansão da água do aquífero contíguo à
@@ -815,8 +761,6 @@ Para aquíferos de tamanho próximo ao do reservatório.
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 W_{e}=(c_{w}+c_{f})W_{i}\triangle p,
@@ -847,8 +791,6 @@ onde
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 W_{e}=(c_{w}+c_{f})\pi(r_{e}^{2}-r_{o}^{2})h\phi\Delta p,
@@ -860,8 +802,6 @@ W_{e}=(c_{w}+c_{f})\pi(r_{e}^{2}-r_{o}^{2})h\phi\Delta p,
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 onde 
 \begin_inset Formula $r_{e}$
 \end_inset
@@ -880,14 +820,10 @@ onde
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Modelo Schilthuis
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Se, por outro lado, o aquífero é bem maior que o reservatório, essas equações
  se tornam inadequadas para descrever o influxo de água, porque a queda
  de pressão no limite do reservatório (contato água-óleo) não se transmite
@@ -899,8 +835,6 @@ Se, por outro lado, o aquífero é bem maior que o reservatório, essas equaçõ
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 dW_{e}/dt=J(p_{i}-p),
@@ -926,30 +860,22 @@ onde
 \end_layout
 
 \begin_layout Subsection
-
-\series bold
 Reservatórios de gás condensado
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Reservatórios de gás condensado são aqueles que em condições de reservatório
  o fluido se encontra no estado gasoso, mas na superfície produz uma certa
  quantidade de líquido.
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Reservatórios de gás condensado não-retrógrado, que são aqueles em que os
  fluidos se encontram no estado gasoso dentro do reservatório, mas em condições
  de superfície produzem volumes equivalentes de água e gás.
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Para reservatórios de gás condensado não-retrógrado o programa faz alguns
  cálculos e aplica-se a equação de balanço de materiais (3.9) acima citada.
  A razão disso, é que para esse tipo de reservatório precisa-se achar um
@@ -961,15 +887,11 @@ Para reservatórios de gás condensado não-retrógrado o programa faz alguns
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Precisa-se achar o volume de gás equivalente para cada 1 m³ de condensado
  produzido:
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 (GE)_{c}=23686d_{c}/M_{c},
@@ -981,8 +903,6 @@ Precisa-se achar o volume de gás equivalente para cada 1 m³ de condensado
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 onde 
 \begin_inset Formula $(GE)_{c}$
 \end_inset
@@ -1008,15 +928,11 @@ M_{c}=44.29d_{c}/(1.03-d_{c}).
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Precisa-se saber também o volume de vapor de água produzido para cada 1m³
  de condensado produzido e esse valor será
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 (GE)_{w}=1316\text{ [m³std/m³std]}.
@@ -1028,8 +944,6 @@ Precisa-se saber também o volume de vapor de água produzido para cada 1m³
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Chegando-se então no seguinte valor para 
 \begin_inset Formula $(G_{p})_{t}$
 \end_inset
@@ -1038,8 +952,6 @@ Chegando-se então no seguinte valor para
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 (G_{p})_{t}=G_{p}+(GE)_{ct}+(GE)_{wt},
@@ -1072,8 +984,6 @@ e,
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Reservatórios de gás condensado retrógrado, que são aqueles em que há formação
  de líquido ainda dentro do reservatório, à medida que ocorre a depleção.
  Emprega-se o fator de compressibilidade duas fases 
@@ -1097,21 +1007,15 @@ Descrição dos mecanismos de produção para reservatório de óleo
 \end_layout
 
 \begin_layout Standard
-
-\series bold
 Os reservatórios de óleo a serem considerados são:
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Reservatórios com gás em solução, cujo mecanismo de produção se baseia na
  expansão do gás inicialmente dissolvido no óleo e que foi liberado devido
  à redução de pressão, consequência da produção de fluidos.
  Para este reservatório, considerando-se a compressibilidade desprezível
  obtemos a equação de balanço de materiais:
-\series default
-
 \begin_inset Separator latexpar
 \end_inset
 
@@ -1120,8 +1024,6 @@ Reservatórios com gás em solução, cujo mecanismo de produção se baseia na
 
 \begin_deeper
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 F=NE_{o};
@@ -1134,13 +1036,9 @@ F=NE_{o};
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Reservatórios com capa de gás, cujo mecanismo de produção se baseia na expansão
  da capa de gás devido à diminuição de pressão.
  Para um reservatório com mecanismo de capa de gás, temos:
-\series default
-
 \begin_inset Separator latexpar
 \end_inset
 
@@ -1149,8 +1047,6 @@ Reservatórios com capa de gás, cujo mecanismo de produção se baseia na expan
 
 \begin_deeper
 \begin_layout Standard
-
-\series bold
 \begin_inset Formula 
 \begin{equation}
 F=N(E_{o}+mE_{g});
@@ -1163,13 +1059,9 @@ F=N(E_{o}+mE_{g});
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Reservatórios com influxo de água, onde a queda de pressão devida à produção
  de fluidos causa uma expansão da água do aquífero contíguo à zona de óleo.
  Para um reservatório com mecanismo de influxo de água:
-\series default
-
 \begin_inset Separator latexpar
 \end_inset
 
@@ -1288,7 +1180,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/diagramas/Diagrama_de_pacotes.jpeg
+	filename imagens/DiagramaDeComponentes-Assuntos-Pacotes.jpeg
 	width 80text%
 
 \end_inset
