@@ -184,8 +184,6 @@ today ele vai colocar data no material impresso
 No presente trabalho desenvolve-se um simulador de estimativa de reserva
  de reservatório utilizando EBM, com enfoque nos reservatórios de gás, um
  software desenvolvido usando-se a linguagem C++
-\series bold
-
 \begin_inset Foot
 status open
 
@@ -200,19 +198,13 @@ A linguagem utilizada é uma linguagem orientada a objeto, que utiliza o
 
 \end_inset
 
-
-\series default
  e paradigma de orientação a objetos, que tem como principal objetivo implementa
 r as equações de balanço de materias vistas na disciplina de Engenharia
  de Reservatório para os diferentes mecanismo de produção de petróleo.
  Dessa forma, a principal finalidade do programa é fornecer uma estimativa
  do volume original de óleo ou gás do reservatório.
-
-\series bold
  Além dos mecanismos de produção convencionais, o simulador também é capaz
  de modelar a injeção de água e gás ou uma mistura de fluidos.
-
-\series default
  Também é dado um enfoque em reservatórios de gás e gás condensado, incluindo,
  por exemplo, o seu comportamento quando há influxo de água, e alguns modelos
  para o cálculo deste influxo
@@ -361,15 +353,11 @@ name "sec:Objetivos-v3"
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Objetivo geral:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 Aperfeiçoar a solução para determinar o volume original de fluido (principalment
 e gás) no reservatório, incluindo a modelagem de diferentes mecanismos de
  produção e a injeção de fluidos.
@@ -377,29 +365,21 @@ e gás) no reservatório, incluindo a modelagem de diferentes mecanismos de
 
 \end_deeper
 \begin_layout Itemize
-
-\series bold
 Objetivos específicos:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
 Implementar classes e métodos para representar a injeção de água, gás, polímero,
  surfactante, vapor e gás lift no reservatório.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Aprimorar a flexibilidade do programa para lidar com uma variedade de cenários
  de produção e injeção.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Refinar a lógica de cálculo do volume original de fluido para considerar
  os efeitos das novas classes de injeção.
 \end_layout
@@ -413,9 +393,7 @@ As EBM foram implementadas no segundo semestre de 2012 pelos alunos Leonardo
  a determinação do volume original de gás: considerando-se reservatórios
  de gás condensado (retrógrado e não retrógrado), analisando-se a influência
  dos aquíferos e detalhando o comportamento de alguns modelos de influxo.
- 
-\series bold
-Nesta versão do projeto, o código foi estendido para inclur a modelagem
+ Nesta versão do projeto, o código foi estendido para inclur a modelagem
  da injeção de fluidos ao reservatório, aumentando a gama de cenários de
  simulação da produção para determinar o volume original de óleo e gás em
  reservatórios que estão sendo submetidos a injeção de fluidos.
