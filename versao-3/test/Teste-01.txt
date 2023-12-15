@@ -1,7 +1,0 @@
-2.4.1 Diagrama de caso de uso geral
-O diagrama de caso de uso geral da Figura 2.5 mostra o usuário acessando as interações principais do sistema. É o ponto central, e a partir dele, o usuário pode escolher
-diferentes mecanismos de produção, selecionar métodos de injeção, salvar dados analisados do histórico de produção e analisar os gráficos. Cada uma dessas interações é um caso
-de uso separado, permitindo uma representação visual das funcionalidades principais do
-seu software.
-
-Matheus Nascimento

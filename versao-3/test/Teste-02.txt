@@ -1,3 +1,0 @@
-O caso de uso específico Escolha do Mecanismo de Produçãodescrito na Figura 2.5 e na Tabela 2.1 é detalhado na Figura 2.6. O usuário escolhe o mecanismo de produção desejado. O sistema oferece opções como produção de gás, produção de óleo, expansão da capa de gás, influxo de água, e produção de gás condensado. O usuário deve selecionar o mecanismo desejado para prosseguir com a simulação.
-
-Igor Benjamin
